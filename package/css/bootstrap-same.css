@@ -1,0 +1,64 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+body { background-color: #eee; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei";}
+a:focus, a:hover { background: none !important; text-decoration: none;}
+
+.container { padding: 0; overflow: hidden;}
+.text-primary { color: #39f;}
+.text-muted { color: #999;}
+.text-warning { color: #fc6;}
+.text-info { color: #a6d2ff;}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover { background-color: #39f !important;}
+
+.same-user-header { background-color: #39f; padding-bottom: 20px; color: #fff;}
+.same-user-header .menu { padding: 15px 20px 0; font-size: 1.6em; position: relative;}
+.same-user-header .point { position: absolute; background-color: #fc6; padding: 5px; border-radius: 10px; left: 35px;}
+.same-user-header .avatar { position: relative; width: 84px;}
+.same-user-header .avatar img { width: 80px; height: 80px; border: 2px solid #fff;}
+.same-user-header .glyphicon-menu-hamburger { color: #fff;}
+.same-user-header .glyphicon-pencil { position: absolute; top: 65px; right: 0;}
+.same-user-header .username { font-size: 1.8em; margin-top: 10px;}
+
+.same-navbar { font-size: 1.2em; background-color: #39f; color: #fff; margin: 0; padding: 0 10px;}
+.same-navbar a { color: #fff;}
+.same-navbar .navbar-text { float: none;}
+
+.same-list { padding-left: 10px; padding-right: 10px; background-color: #fff;}
+.same-list .list-group-item { border-width: 1px 0; border-radius: 0; font-size: 1.15em;}
+.same-list .list-group-item:first-child { border-top: none;}
+.same-list .list-group-item:last-child { border-bottom: none;}
+.same-list .glyphicon-menu-right { margin-top: 3px; margin-left: 10px; color: #ccc;}
+
+.same-media { padding-left: 15px; padding-right: 15px; background-color: #fff;}
+.same-media .list-group-item { border-width: 1px 0; border-radius: 0; padding: 15px 0;}
+.same-media .list-group-item:first-child { border-top: none;}
+.same-media .list-group-item:last-child { border-bottom: none;}
+.same-media p { margin-bottom: 0; padding-top: 15px;}
+.same-media .media-object { width: 90px; height: 124px;}
+.same-media .media-heading { font-weight: bold;}
+.same-media .btn-default { background-color: #e6f2ff; border-color: #97cbff; color: #39f;}
+.same-media .score { margin-bottom: 30px;}
+.same-media .score-number { font-size: 1.6em; line-height: 1em;}
+.same-media .status { width: 4em;}
+.same-media .status-number { font-size: 1.8em;}
+.same-media .code-img { width: 30px; height: 30px;}
+
+.same-integral h4 { font-weight: bold;}
+.same-integral .badge { background-color: #fc6; border-radius: 100px; width: 40px; padding: 14px 0; margin-top: -20px;}
+.same-integral .badge-inverse { background-color: #ccc;}
+
+.same-confirm .modal-content { overflow: hidden;}
+.same-confirm .modal-footer { padding: 0;}
+.same-confirm .modal-footer .btn { width: 50%; border-radius: 0; border: none;}
+.same-confirm .modal-footer .btn+.btn { margin: 0; border-left: 1px solid #fff;}
+
+.same-empty { padding: 20px; background-color: #fff;}
+.same-empty .thumbnail { border: none; max-width: 300px;}
+
