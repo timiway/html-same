@@ -5,7 +5,8 @@
  */
 
 body { background-color: #eee; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei";}
-a:focus, a:hover { background: none !important; text-decoration: none;}
+a:focus, a:hover { text-decoration: none;}
+form { background-color: #fff; padding: 15px;}
 
 .container { padding: 0; overflow: hidden;}
 .text-primary { color: #39f;}
@@ -13,9 +14,7 @@ a:focus, a:hover { background: none !important; text-decoration: none;}
 .text-warning { color: #fc6;}
 .text-info { color: #a6d2ff;}
 
-.btn-primary,
-.btn-primary:focus,
-.btn-primary:hover { background-color: #39f !important;}
+.btn-primary { background-color: #39f !important;}
 
 .same-user-header { background-color: #39f; padding-bottom: 20px; color: #fff;}
 .same-user-header .menu { padding: 15px 20px 0; font-size: 1.6em; position: relative;}
@@ -29,6 +28,7 @@ a:focus, a:hover { background: none !important; text-decoration: none;}
 .same-navbar { font-size: 1.2em; background-color: #39f; color: #fff; margin: 0; padding: 0 10px;}
 .same-navbar a { color: #fff;}
 .same-navbar .navbar-text { float: none;}
+.same-navbar .title { text-align: center; margin-left: 80px; margin-right: 80px;}
 
 .same-list { padding-left: 10px; padding-right: 10px; background-color: #fff;}
 .same-list .list-group-item { border-width: 1px 0; border-radius: 0; font-size: 1.15em;}
@@ -50,6 +50,20 @@ a:focus, a:hover { background: none !important; text-decoration: none;}
 .same-media .status-number { font-size: 1.8em;}
 .same-media .code-img { width: 30px; height: 30px;}
 
+.same-share { padding-left: 15px; padding-right: 15px; background-color: #fff;}
+.same-share .list-group-item { border-width: 1px 0; border-radius: 0; padding: 15px 0;}
+.same-share .list-group-item:first-child { border-top: none;}
+.same-share .list-group-item:last-child { border-bottom: none;}
+.same-share p { margin-bottom: 5px;}
+.same-share .media-heading { font-weight: bold; color: #333; margin-right: 20px;}
+.same-share .media-body { padding-top: 5px;}
+.same-share .media-body .pull-left { width: 60%; margin-bottom: 5px;}
+.same-share .media-body .pull-right { width: 40%; margin-bottom: 5px;}
+.same-share .media-sm { width: 75px; max-height: 100px;}
+.same-share .avatar { display: inline-block;}
+.same-share .avatar img { width: 18px; height: 18px;}
+.same-share .mark { position: absolute; top: -1px; right: -15px; padding: 5px; color: #fff; background-color: #fc6;}
+
 .same-integral h4 { font-weight: bold;}
 .same-integral .badge { background-color: #fc6; border-radius: 100px; width: 40px; padding: 14px 0; margin-top: -20px;}
 .same-integral .badge-inverse { background-color: #ccc;}
@@ -61,4 +75,7 @@ a:focus, a:hover { background: none !important; text-decoration: none;}
 
 .same-empty { padding: 20px; background-color: #fff;}
 .same-empty .thumbnail { border: none; max-width: 300px;}
+
+.same-feedback .form-control { background-color: #efefef;}
+.same-feedback .form-control:focus { background-color: #fff;}
 

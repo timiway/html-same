@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Await empty</title>
+    <title>Feedback</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -23,22 +23,26 @@
         <p class="navbar-text pull-left">
             <a href="home.html"><span class="glyphicon glyphicon-menu-left"></span></a>
         </p>
-        <p class="navbar-text pull-right"><strong class="text-warning">0</strong> <span class="text-info">部</span></p>
-        <p class="navbar-text title"><strong>我想看的</strong></p>
+        <p class="navbar-text title"><strong>意见反馈</strong></p>
+
     </nav>
 
-    <div class="same-empty">
-        <div class="text-center">
-            <p class="text-muted">你还没有自己的电影订单，快来创建吧！</p>
-            <div class="thumbnail center-block"><img src="img/009.png"/></div>
+    <form class="same-feedback">
+        <div class="form-group">
+            <label for="text1">手机号</label>
+            <span class="text-muted">(方便我们对您的意见作出回复)</span>
+            <input id="text1" type="text" class="form-control"/>
         </div>
-        <a class="btn btn-primary btn-block" href="home.html" role="button">
-            <span class="glyphicon glyphicon-blackboard pull-left"></span>返回电影订单
-        </a>
-    </div>
+        <div class="form-group">
+            <label for="text2">请填写反馈意见</label>
+            <textarea id="text2" class="form-control" rows="12"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#confirmModal">兑换影票</button>
+    </form>
 
 
 </div>
+
 
 
 
