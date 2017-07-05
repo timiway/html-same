@@ -40,8 +40,8 @@ form { background-color: #fff; padding: 15px;}
 .same-media .list-group-item { border-width: 1px 0; border-radius: 0; padding: 15px 0;}
 .same-media .list-group-item:first-child { border-top: none;}
 .same-media .list-group-item:last-child { border-bottom: none;}
-.same-media p { margin-bottom: 0; padding-top: 15px;}
-.same-media .media-object { width: 90px; height: 124px;}
+.same-media p { margin-bottom: 0; padding-top: 15px; font-size: 12px;}
+.same-media .media-object { width: 70px; height: 92px;}
 .same-media .media-heading { font-weight: bold;}
 .same-media .btn-default { background-color: #e6f2ff; border-color: #97cbff; color: #39f;}
 .same-media .score { margin-bottom: 30px;}
