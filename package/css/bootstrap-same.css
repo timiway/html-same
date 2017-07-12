@@ -30,13 +30,13 @@ form { background-color: #fff; padding: 15px;}
 .same-user-header .glyphicon-pencil { position: absolute; top: 50px; right: 0;}
 .same-user-header .username { font-size: 1.3em; margin-top: 5px;}
 
-.same-navbar { font-size: 1.1em; background-color: #39f; color: #fff; margin: 0; padding: 0 10px;}
+.same-navbar { font-size: 1.2em; background-color: #39f; color: #fff; margin: 0; padding: 0 10px;}
 .same-navbar a { color: #fff;}
 .same-navbar .navbar-text { float: none;}
 .same-navbar .title { text-align: center; margin-left: 80px; margin-right: 80px;}
 
 .same-list { padding-left: 10px; padding-right: 10px; margin-bottom: 15px; background-color: #fff;}
-.same-list .list-group-item { border-width: 1px 0; border-radius: 0; color: #333;}
+.same-list .list-group-item { border-width: 1px 0; border-radius: 0; color: #333; padding: 15px;}
 .same-list .list-group-item:first-child { border-top: none;}
 .same-list .list-group-item:last-child { border-bottom: none;}
 .same-list .glyphicon-menu-right { margin-top: 3px; margin-left: 0px; color: #ccc;}
@@ -50,11 +50,12 @@ form { background-color: #fff; padding: 15px;}
 .same-media .text-multiline { height: 45px;}
 .same-media .media-object { width: 70px; height: 90px;}
 .same-media .media-heading { font-weight: bold; margin-top: 3px;}
+.same-media .media-right { vertical-align: middle;}
 .same-media .btn-default { background-color: #e6f2ff; border-color: #97cbff; color: #39f; padding: 6px 20px;}
 .same-media .score { margin-bottom: 10px;}
 .same-media .score-number { font-size: 1.2em; line-height: 1em;}
 .same-media .status { width: 4em;}
-.same-media .status p { margin-top: 15px;}
+.same-media .status-header { margin-bottom: 15px;}
 .same-media .status-number { font-size: 1.4em;}
 .same-media .code-img { width: 26px; height: 26px;}
 
@@ -72,7 +73,8 @@ form { background-color: #fff; padding: 15px;}
 .same-share .space { margin-bottom: 10px;}
 .same-share .avatar { display: inline-block;}
 .same-share .avatar img { width: 18px; height: 18px;}
-.same-share .mark { position: absolute; top: -1px; right: -15px; padding: 5px; color: #fff; background-color: #fc6;}
+.same-share .btn { position: absolute; top: -1px; right: -15px; color: #fff; background-color: #fc6; padding: 2px 5px; border-radius: 0;}
+.same-share .btn .glyphicon { font-size: 1.1em;}
 
 .same-integral { margin-bottom: 42px;}
 .same-integral h5 { font-weight: bold;}
@@ -80,11 +82,11 @@ form { background-color: #fff; padding: 15px;}
 .same-integral .badge { background-color: #fc6; border-radius: 100px; width: 40px; padding: 14px 0; margin-top: -20px;}
 .same-integral .badge-inverse { background-color: #ccc;}
 
-.same-confirm { width: 260px; margin: 120px auto 0; font-size: 80%;}
+.same-confirm { width: 300px; margin: 120px auto 0;}
 .same-confirm .modal-content { overflow: hidden; box-shadow: none; border: none;}
 .same-confirm .modal-body { padding: 15px;}
 .same-confirm .modal-footer { padding: 6px 0; background-color: #39f;}
-.same-confirm .modal-footer .btn { width: 50%; border-radius: 0; border: none; padding: 3px 12px; font-size: 80%;}
+.same-confirm .modal-footer .btn { width: 50%; border-radius: 0; border: none; padding: 3px 12px;}
 .same-confirm .modal-footer .btn+.btn { margin: 0; border-left: 1px solid #91c8ff;}
 
 .same-empty { padding: 20px; background-color: #fff;}
