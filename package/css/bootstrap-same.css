@@ -1,9 +1,10 @@
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE
  */
 
+html,body { overflow-x: hidden; width: 100%;}
 body { background-color: #eee; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei";}
 a:focus, a:hover { text-decoration: none;}
 form { background-color: #fff; padding: 15px;}
@@ -21,6 +22,9 @@ form { background-color: #fff; padding: 15px;}
 .btn-primary { background-color: #39f !important;}
 .btn-fix-bottom { position: fixed; bottom: 0; border-radius: 0; font-size: 1.2em;}
 
+.same-sider { width: 170px; height: 100%; position: fixed; left: -170px; background-color: #333;}
+.same-main { width: 100%; position: relative; left: 0;}
+
 .same-user-header { background-color: #39f; padding-bottom: 20px; color: #fff;}
 .same-user-header .menu { padding: 15px 20px 0; font-size: 1.6em; position: relative;}
 .same-user-header .point { position: absolute; background-color: #fc6; padding: 5px; border-radius: 10px; left: 35px;}
@@ -29,6 +33,11 @@ form { background-color: #fff; padding: 15px;}
 .same-user-header .glyphicon-menu-hamburger { color: #fff;}
 .same-user-header .glyphicon-pencil { position: absolute; top: 50px; right: 0;}
 .same-user-header .username { font-size: 1.3em; margin-top: 5px;}
+
+.same-side-header { border-bottom: 1px solid #666; padding: 20px 0; padding-left: 20px; margin: 0 20px;}
+.same-side-header .avatar img { width: 46px; height: 46px;}
+.same-side-header .username { color: #fff; margin-bottom: 10px;}
+.same-side-header p { color: #fff; margin: 0; font-size: 80%;}
 
 .same-navbar { font-size: 1.2em; background-color: #39f; color: #fff; margin: 0; padding: 0 10px;}
 .same-navbar a { color: #fff;}
@@ -41,6 +50,11 @@ form { background-color: #fff; padding: 15px;}
 .same-list .list-group-item:last-child { border-bottom: none;}
 .same-list .glyphicon-menu-right { margin-top: 3px; margin-left: 0px; color: #ccc;}
 .same-list .text { width: 50px;}
+
+.same-list-side { font-size: 110%; padding: 5px 20px;}
+.same-list-side .list-group-item { border: none; border-radius: 0; color: #fff; background: none; padding: 20px;}
+.same-list-side .list-group-item.active { color: #39f;}
+.same-list-side .point { position: absolute; background-color: #fc6; padding: 5px; border-radius: 10px; left: 90px;}
 
 .same-media { padding-left: 15px; padding-right: 15px; background-color: #fff; margin-bottom: 0;}
 .same-media .list-group-item { border-width: 1px 0; border-radius: 0; padding: 15px 0;}
