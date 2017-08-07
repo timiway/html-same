@@ -14,6 +14,7 @@ small {color: inherit !important;}
 .row [class^=col-] { padding: 0;}
 
 .container { padding: 0; overflow: hidden;}
+.text-white { color: #fff;}
 .text-default { color: #333;}
 .text-primary { color: #39f;}
 .text-muted { color: #999;}
@@ -38,6 +39,10 @@ small {color: inherit !important;}
 .navbar-fixed-bottom .separate { position: absolute; height: 60%; width: 0; top: 20%; border-left: 1px solid #91c8ff;}
 
 .form-control { border: none; box-shadow: none;}
+.form-date { width: 140px; margin-right: 10px;}
+.form-count { position: absolute; right: 5px; bottom: 5px;}
+
+.label-form { font-size: 1em; line-height: 2.4em; background-color: #d7ebff; color: #333; font-weight: normal; margin-right: 5px; margin-bottom: 5px;}
 
 .dl-same {}
 .dl-same dt { float: left; width: 65px; color: #333; font-weight: normal;}
@@ -68,6 +73,11 @@ small {color: inherit !important;}
 .same-search .input-group-addon img { width: 60px; height: 20px;}
 .same-search .input-group-btn img { width: 20px; height: 20px;}
 
+.note-search { margin: 0 15px; padding: 20px 0; border-bottom: 1px solid #e7e7e7;}
+.note-search .block { background-color: #efefef;}
+.note-search .form-control,
+.note-search .form-control::-webkit-input-placeholder { color: #999;}
+
 .same-user-header { background-color: #39f; padding-bottom: 20px; color: #fff;}
 .same-user-header .same-menu { font-size: 1.6em; padding-left: 20px; margin-top: 10px;}
 .same-user-header .avatar { position: relative; width: 64px;}
@@ -80,6 +90,31 @@ small {color: inherit !important;}
 .same-side-header .avatar img { width: 46px; height: 46px;}
 .same-side-header .username { color: #fff; margin-bottom: 10px;}
 .same-side-header p { color: #fff; margin: 0; font-size: 85%;}
+
+.same-stage { position: absolute; width: 100%; top: 0; bottom: 0; overflow-y: auto;}
+.stage-bg { background: url("../img/027.png") no-repeat 0 0; background-size: 100% 100%;}
+.stage-seat { height: 90px; background: url("../img/028.png") repeat-x 50% 0; background-size: 390px;}
+
+.stage-note { padding-top: 55px; padding-bottom: 120px;}
+.stage-note .slogan { width: 230px; padding: 20px 0;}
+.stage-note .text { color: #aec2de;}
+.stage-note p { color: #abb3bf; margin-bottom: 15px;}
+.stage-note label { color: #fff; font-size: 2.4em; font-family: "Segoe UI"; font-weight: normal; vertical-align: middle;}
+
+.stage-note-search { padding-top: 310px;}
+.stage-note-search.bar-space { padding-bottom: 48px;}
+.stage-note-search .header { top: 54px; height: 220px; box-shadow: 0 25px 50px #071b2a;}
+.stage-note-search .word { width: 300px; color: #b9dcff;}
+.stage-note-search .text-multiline { height: 130px; overflow: hidden;}
+.stage-note-search .icon { height: 100%; background: url("../img/030.png") no-repeat 50% 50%; background-size: 100px;}
+.stage-note-search .same-search { margin: -15px 15px 0;}
+.stage-note-search .form-control,
+.stage-note-search .form-control::-webkit-input-placeholder { color: #999;}
+
+.same-form {}
+.same-form label { font-weight: normal;}
+.same-form .form-group { position: relative;}
+.same-form .form-control { background-color: #efefef;}
 
 .same-list { padding-left: 10px; padding-right: 10px; margin-bottom: 15px; background-color: #fff;}
 .same-list .list-group-item { border-width: 1px 0; border-radius: 0; color: #333; padding: 15px;}
@@ -100,13 +135,14 @@ small {color: inherit !important;}
 .same-media p { margin-bottom: 0; font-size: 85%;}
 .same-media .text-multiline { height: 45px;}
 .same-media .text-line3 { line-height: 1.6em;}
+.same-media .text-space { padding-top: 5px;}
 .same-media .media-object { width: 70px; height: 90px;}
 .same-media .media-heading { font-weight: bold; margin-top: 3px;}
 .same-media .media-heading a { color: inherit;}
-.same-media .media-right { vertical-align: middle;}
+.same-media .media-right {}
 .same-media .btn { padding: 6px 20px;}
 .same-media .btn-onoff { white-space: nowrap; padding-top: 15px;}
-.same-media .score { margin-bottom: 10px;}
+.same-media .score { margin-bottom: 10px; white-space: nowrap;}
 .same-media .score small { font-size: 70%;}
 .same-media .score-number { font-size: 1.2em; line-height: 1em;}
 .same-media .status { width: 4em;}
