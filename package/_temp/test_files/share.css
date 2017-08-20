@@ -1,0 +1,47 @@
+html{
+	font-size: 60px;
+}
+.sharebox{
+	display: inline-block;
+	width: 2.1rem;
+	margin-right: 0.1rem;
+}
+.sharebox:last-child{
+	margin-right: 0;
+}
+.bdsharebuttonbox{
+	text-align: center;
+}
+.bdsharebuttonbox .imgwid{
+	display:inline-block;
+ 	width: 1.666rem;
+ 	height: 1.666rem;
+ 	margin-bottom: 0.333rem;
+ 	margin-left: 0.21666rem;	
+}
+.bdshare-button-style2-16 a,.bdshare-button-style0-32 a{
+	margin-top:0!important;
+	margin-right:0!important;
+	padding: 0!important;
+	color: #666!important;
+}
+span{
+	display: block;
+	width:2.1rem;
+	text-align: center;
+	font-size: 0.433rem;
+	line-height: 0.433rem;
+	color: #666;
+}
+.bdsharebuttonbox .bg3{
+	background: url(../image/3.png) no-repeat;
+	background-size:contain;
+}
+.bdsharebuttonbox .bg4{
+	background: url(../image/4.png) no-repeat;
+	background-size:contain;
+}
+.bdsharebuttonbox .bg5{
+	background: url(../image/5.png) no-repeat;
+	background-size:contain;
+}
