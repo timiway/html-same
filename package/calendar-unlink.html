@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>活动详情</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-same.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar-fixed-top same-bar">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-5">
+                <div class="text-center item">
+                    <div class="avatar">
+                        <a href="####"><img class="img-circle" src="img/010.png" alt="..."></a>
+                    </div>
+                    来自：桃桃淘电影
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="text-center item">
+                    <div class="avatar">
+                        <a href="####"><img class="img-circle" src="img/001.png" alt="..."></a>
+                    </div>
+                    Kai 分享
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="text-center item">
+                    收藏：<span class="text-primary">123</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+
+<div class="container same-main bg-white">
+
+    <div id="link_frame" class="embed-responsive same-embed">
+        <iframe class="embed-responsive-item bar-space" src="http://www.1905.com/m/news/touch/1206348.shtml">
+        </iframe>
+    </div>
+
+</div>
+
+<nav class="navbar-fixed-bottom same-bar">
+
+    <div class="pull-left">
+        <a class="btn btn-lg" href="calendar.html">
+            <span class="glyphicon glyphicon-menu-left"></span>
+        </a>
+    </div>
+    <div class="pull-right">
+        <button class="btn btn-lg">
+            <img src="img/035.png" />
+        </button>
+        <button class="btn btn-lg" data-toggle="modal" data-target="#followModal">
+            <span class="glyphicon glyphicon-heart"></span>
+        </button>
+        <button class="btn btn-lg" data-toggle="modal" data-target="#remindModal">
+            <span class="glyphicon glyphicon-time"></span>
+        </button>
+    </div>
+
+</nav>
+
+<!-- Modal1 -->
+<div class="modal fade" id="followModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm same-confirm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-note">
+                    <div class="title">
+                        <span class="text-primary">你关注的活动与如下活动时间冲突，请合理安排时间。</span>
+                    </div>
+                    <div class="item">
+                        <div class="text-default"><strong>中国电影资料馆2017年5月经采放映</strong></div>
+                        <div class="text-muted small">2017.05.01 12:00</div>
+                    </div>
+                    <div class="item">
+                        <div class="text-default"><strong>Camera Stylo 《感谢上帝，周五了》放映及映后导演交流</strong></div>
+                        <div class="text-muted small">2017.05.01 14:00</div>
+                    </div>
+                    <div class="item">
+                        <div class="text-default"><strong>5月电影”杀手信条”末路风骨之《黄昏清兵卫》</strong></div>
+                        <div class="text-muted small">2017.05.01 13:30</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-left" onclick="temp_follow();"><strong>继续关注</strong></button>
+                <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade" id="remindModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm same-confirm" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <p>设置提醒功能后，SAME 会在活动<strong class="text-primary">开始前一天的晚20:00</strong>发送活动开始提醒，以免你错过精彩活动，再次点击则取消提醒。</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-left" onclick="temp_remind();"><strong>设置提醒</strong></button>
+                <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.1.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app-same.js"></script>
+<script>
+    function temp_follow() {
+        //
+        //todo actions...
+        //
+        $('[data-target=#followModal]').toggleClass('on');
+        $('#followModal').modal('hide');
+    }
+    function temp_remind() {
+        //
+        //todo actions...
+        //
+        $('[data-target=#remindModal]').toggleClass('on');
+        $('#remindModal').modal('hide');
+    }
+</script>
+</body>
+</html>

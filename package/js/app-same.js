@@ -21,4 +21,7 @@ $(function(){
     $($(this).attr("href")).stop().animate({height:_icon.is(".glyphicon-chevron-down")?"100%":"4em"});
     e.preventDefault();
   });
+  //
+  $("#link_frame").height($(window).height()-($(".same-media").is(":visible")?$(".same-media").height()+$(".same-bar").height():0));
+
 });

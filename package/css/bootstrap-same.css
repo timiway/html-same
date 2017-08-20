@@ -26,10 +26,13 @@ small {color: inherit !important;}
 .bg-warning { background-color: #fc6;}
 
 .btn { border: none;}
+.btn:focus, .btn:hover { color: inherit; box-shadow: none;}
 .btn-primary { background-color: #39f !important;}
 .btn-info { background-color: #3cc !important;}
 .btn-default { background-color: #e6f2ff !important; border: 1px solid #97cbff; color: #39f;}
 .btn-warning { background-color: #fff4df !important; border: 1px solid #ffe2aa; color: #ffc54a;}
+.btn-go { background-color: #fc6; color: #fff; padding: 10px;}
+.btn-go img { width: 18px; height: 18px;}
 
 .navbar-fixed-bottom { text-align: center;}
 .navbar-fixed-bottom p { margin-bottom: 20px;}
@@ -38,16 +41,33 @@ small {color: inherit !important;}
 .navbar-fixed-bottom .icon-weixin { width: 75px; height: 20px; margin-left: 10px;}
 .navbar-fixed-bottom .separate { position: absolute; height: 60%; width: 0; top: 20%; border-left: 1px solid #91c8ff;}
 
+.navbar-collapse { background-color: #0b85ff; margin: 0 -10px; padding: 0; box-shadow: none;}
+
+.navbar-filter { padding: 5px;}
+.navbar-filter .btn { padding: 6px; border-radius: 0;}
+.navbar-filter .btn img { width: 18px; height: 18px;}
+
 .form-control { border: none; box-shadow: none;}
 .form-date { width: 140px; margin-right: 10px;}
 .form-count { position: absolute; right: 5px; bottom: 5px;}
 
 .label-form { font-size: 1em; line-height: 2.4em; background-color: #d7ebff; color: #333; font-weight: normal; margin-right: 5px; margin-bottom: 5px;}
 
+.modal-note { margin: 0 10px;}
+.modal-note .title { border-bottom: 1px solid #e7e7e7; padding-bottom: 10px;}
+.modal-note .item { padding: 10px 0; margin-right: 20px;}
+
+.media-heading a { color: inherit;}
+
+.embed-responsive { -webkit-overflow-scrolling: touch; overflow-y: scroll;}
+.embed-responsive-item.bar-space { padding: 50px 0;}
+
 .dl-same {}
 .dl-same dt { float: left; width: 65px; color: #333; font-weight: normal;}
 .dl-same dd { margin-left: 65px;}
 .dl-same dd p { margin-bottom: 5px;}
+
+.space-bar { height: 50px;}
 
 .same-slide { width: 100%;}
 
@@ -56,10 +76,22 @@ small {color: inherit !important;}
 .same-navbar .navbar-text { float: none;}
 .same-navbar .same-search { margin-left: 30px; padding: 10px 0;}
 .same-navbar .title { text-align: center; margin-left: 80px; margin-right: 80px;}
+.same-navbar .filter { margin-right: -10px;}
+.same-navbar .filter .btn { height: 54px; background-color: #0b85ff; border-radius: 0;}
+.same-navbar .filter .btn.collapsed { background-color: inherit;}
+
+.same-bar { font-size: 85%; background-color: rgba(100,100,100,0.3); height: 50px;}
+.same-bar .item { padding-top: 14px;}
+.same-bar .avatar { display: inline-block;}
+.same-bar .avatar img { width: 18px; height: 18px;}
+.same-bar .btn { float: left; height: 50px; width: 45px; line-height: 49px; background: none; color: inherit;}
+.same-bar .btn-primary { color: #fff; width: auto; padding: 0 20px;}
+.same-bar .btn img { width: 20px; height: 20px; vertical-align: text-top;}
+.same-bar .btn.on { color: #fff; background-color: #fc6;}
 
 .same-sider { width: 170px; height: 100%; position: fixed; left: -170px; background-color: #333;}
 .same-main { position: relative; left: 0;}
-.same-main.nav-space { padding-top: 55px;}
+.same-main.nav-space { padding-top: 54px;}
 .same-main.bar-space { padding-bottom: 48px;}
 
 .same-menu { position: relative;}
@@ -91,6 +123,13 @@ small {color: inherit !important;}
 .same-side-header .username { color: #fff; margin-bottom: 10px;}
 .same-side-header p { color: #fff; margin: 0; font-size: 85%;}
 
+.same-calendar { font-size: 85%; height: 80px; background-color: #fbfbfb;}
+.same-calendar p { margin-bottom: 5px;}
+.same-calendar .btn { height: 80px; line-height: 68px; background-color: #f3f3f3; border-radius: 0;}
+.same-calendar .row { text-align: center;}
+.same-calendar .col-xs-2 { height: 79px; padding-top: 8px; width: 14.2857%;}
+.same-calendar .badge { font-size: 10px; padding: 0; width: 18px; height: 18px; line-height: 18px; background-color: #39f;}
+
 .same-stage { position: absolute; width: 100%; top: 0; bottom: 0; overflow-y: auto;}
 .stage-bg { background: url("../img/027.png") no-repeat 0 0; background-size: 100% 100%;}
 .stage-seat { height: 90px; background: url("../img/028.png") repeat-x 50% 0; background-size: 390px;}
@@ -116,6 +155,10 @@ small {color: inherit !important;}
 .same-form .form-group { position: relative;}
 .same-form .form-control { background-color: #efefef;}
 
+.same-title { padding: 15px 0; margin: 0 15px; border-bottom: 1px solid #e7e7e7;}
+.same-stall { padding: 5px 0;}
+.same-embed { border-top: 1px solid #e7e7e7; margin: 0 10px;}
+
 .same-list { padding-left: 10px; padding-right: 10px; margin-bottom: 15px; background-color: #fff;}
 .same-list .list-group-item { border-width: 1px 0; border-radius: 0; color: #333; padding: 15px;}
 .same-list .list-group-item:first-child { border-top: none;}
@@ -128,7 +171,7 @@ small {color: inherit !important;}
 .same-list-side .list-group-item.active { color: #39f;}
 .same-list-side .point { position: absolute; padding: 5px; border-radius: 10px; left: 90px;}
 
-.same-media { padding-left: 15px; padding-right: 15px; background-color: #fff; margin-bottom: 0; border-bottom: 1px solid #e7e7e7;}
+.same-media { padding-left: 15px; padding-right: 15px; background-color: #fff; margin-bottom: 0;}
 .same-media .list-group-item { border-width: 1px 0; border-radius: 0; padding: 15px 0;}
 .same-media .list-group-item:first-child { border-top: none;}
 .same-media .list-group-item:last-child { border-bottom: none;}
@@ -138,7 +181,6 @@ small {color: inherit !important;}
 .same-media .text-space { padding-top: 5px;}
 .same-media .media-object { width: 70px; height: 90px;}
 .same-media .media-heading { font-weight: bold; margin-top: 3px;}
-.same-media .media-heading a { color: inherit;}
 .same-media .media-right {}
 .same-media .btn { padding: 6px 20px;}
 .same-media .btn-onoff { white-space: nowrap; padding-top: 15px;}
@@ -150,11 +192,13 @@ small {color: inherit !important;}
 .same-media .status-number { font-size: 1.4em;}
 .same-media .code-img { width: 26px; height: 26px;}
 
+.same-event { margin-left: 95px; margin-right: 15px; border-top: 1px solid #e7e7e7;}
+.same-event .same-ticket { margin: 10px 0;}
+
 .same-sample { background-color: #fff; padding: 20px 0; border-bottom: 1px solid #e7e7e7;}
 .same-sample .media { width: 280px;}
 .same-sample .media-object { width: 70px; height: 90px;}
 .same-sample .media-heading { font-weight: bold; margin-bottom: 10px;}
-.same-sample .media-heading a { color: inherit;}
 .same-sample .dl-same { font-size: 85%; margin-bottom: 0;}
 
 .same-amount { font-size: 85%; padding: 10px 0; max-width: 660px;}
@@ -177,7 +221,8 @@ small {color: inherit !important;}
 .same-share .space { margin-bottom: 10px;}
 .same-share .avatar { display: inline-block;}
 .same-share .avatar img { width: 18px; height: 18px;}
-.same-share .btn { position: absolute; top: -1px; right: -15px; color: #fff; background-color: #fc6; padding: 2px 5px; border-radius: 0;}
+.same-share .btns { position: absolute; top: -1px; right: -15px;}
+.same-share .btn { float: left; color: #fff; background-color: #fc6; padding: 2px 5px; border-radius: 0;}
 .same-share .btn .glyphicon { font-size: 1.1em;}
 
 .same-integral { margin-bottom: 42px;}
@@ -199,7 +244,7 @@ small {color: inherit !important;}
 
 .same-empty { padding: 20px; background-color: #fff;}
 .same-empty .text { padding: 20px 0;}
-.same-empty .thumbnail { border: none; width: 70%; max-width: 300px; margin-bottom: 30px;}
+.same-empty .thumbnail { border: none; width: 70%; max-width: 300px; margin-bottom: 0;}
 .same-empty .btn { padding: 10px;}
 
 .same-feedback .form-control { background-color: #efefef;}
@@ -231,10 +276,12 @@ small {color: inherit !important;}
 .same-users .list-group-item { font-size: 90%; width: 16.6%; height: 70px; overflow: hidden; background: none; border: none; padding: 0;}
 .same-users img { width: 40px; height: 40px; margin-bottom: 5px;}
 .same-users .btn-more { font-size: 100%; background-color: #fff; width: 40px; height: 40px; padding: 10px 0 0; line-height: 1;}
-.same-users .btn-go { background-color: #fc6; color: #fff; padding: 10px;}
+.same-users .btn-go { padding: 10px;}
 
 .same-code { width: 200px; margin-bottom: 20px;}
 .same-code img { width: 200px; height: 200px; padding: 10px; background-color: #fff;}
 .same-code p { margin: 0 5px; font-size: 120%;}
+
+.same-foot { padding: 10px;}
 
 

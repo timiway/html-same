@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>我的</title>
+    <title>分享日历</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -17,27 +17,146 @@
 </head>
 <body>
 
-<div class="container">
+<nav class="navbar navbar-fixed-top same-navbar same-slide">
+    <div class="navbar-text pull-left">
+        <div class="same-menu">
+            <a href="####"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            <span class="point bg-warning"></span>
+        </div>
+    </div>
+    <div class="pull-right filter">
+        <button type="button" class="btn btn-lg collapsed" data-toggle="collapse" data-target="#filter">
+            筛选
+        </button>
+    </div>
+    <p class="navbar-text title"><strong>2017年5月</strong></p>
+    <div class="clearfix"></div>
 
-    <nav class="navbar same-navbar">
-        <p class="navbar-text pull-left">
-            <a href="home.html"><span class="glyphicon glyphicon-menu-left"></span></a>
-        </p>
-        <p class="navbar-text pull-right"><strong class="text-warning">22</strong> <span class="text-info">篇</span></p>
-        <p class="navbar-text title"><strong>我关注的</strong></p>
+    <div id="filter" class="navbar-collapse collapse">
+        <div class="navbar-filter">
+            <a href="####" class="btn">全部</a>
+            <a href="####" class="btn">
+                <img src="img/033.png" />
+                只看小西天
+            </a>
+            <a href="####" class="btn">
+                <span class="glyphicon glyphicon-heart"></span>
+                只看关注的
+            </a>
+            <a href="####" class="btn">
+                <span class="glyphicon glyphicon-time"></span>
+                只看提醒的
+            </a>
+        </div>
+    </div>
 
-    </nav>
+</nav>
+
+
+<div class="container same-sider">
+    <div class="same-side-header">
+        <div class="media">
+            <div class="media-left avatar">
+                <a href="####"><img class="img-rounded" src="img/001.png" alt="..."></a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading username">kai</h4>
+                <p><span class="text-warning">256</span> 分</p>
+            </div>
+        </div>
+    </div>
+    <div class="list-group same-list-side">
+        <a href="order.html" class="list-group-item">
+            电影订单
+        </a>
+        <a href="calendar.html" class="list-group-item active">
+            分享日历
+            <span class="point bg-warning"></span>
+        </a>
+        <a href="post.html" class="list-group-item">
+            分享文章
+        </a>
+        <a href="transfer.html" class="list-group-item">
+            转　　票
+            <span class="point bg-warning"></span>
+        </a>
+        <a href="note.html" class="list-group-item">
+            手　　账
+            <span class="point bg-warning"></span>
+        </a>
+        <a href="home.html" class="list-group-item">
+            我　　的
+            <span class="point bg-warning"></span>
+        </a>
+        <a href="about.html" class="list-group-item">
+            关于我们
+        </a>
+    </div>
+</div>
+
+<div class="container same-main nav-space same-slide">
+
+    <div class="same-calendar same-slide">
+        <a href="####" class="btn pull-left">
+            <span class="glyphicon glyphicon-menu-left"></span>
+        </a>
+        <a href="####" class="btn pull-right">
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <p class="text-muted">日</p>
+                    <p class="text-warning">21</p>
+                </div>
+                <div class="col-xs-2 bg-info">
+                    <p class="text-muted">一</p>
+                    <p class="text-primary">今天</p>
+                    <div class="badge">3</div>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-muted">二</p>
+                    <p class="">23</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-muted">三</p>
+                    <p class="">24</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-muted">四</p>
+                    <p class="">25</p>
+                    <div class="badge">2</div>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-muted">五</p>
+                    <p class="">26</p>
+                </div>
+                <div class="col-xs-2">
+                    <p class="text-muted">六</p>
+                    <p class="text-warning">27</p>
+                    <div class="badge">6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="same-stall">
+        <div class="text-center">5月22日</div>
+    </div>
 
     <ul class="list-group same-share">
         <li class="list-group-item">
             <div class="media">
                 <div class="btns">
-                    <button type="button" class="btn" data-toggle="modal" data-target="#cancelModal">
+                    <button type="button" class="btn">
                         <span class="glyphicon glyphicon-heart"></span>
+                    </button>
+                    <button type="button" class="btn">
+                        <span class="glyphicon glyphicon-time"></span>
                     </button>
                 </div>
                 <h5 class="media-heading">
-                    中国电影资料馆2017年5月经采放映
+                    <a href="calendar-empty.html">空 demo</a>
                 </h5>
                 <div class="media-body text-muted">
                     <div class="space">
@@ -74,12 +193,12 @@
         <li class="list-group-item">
             <div class="media">
                 <div class="btns">
-                    <button type="button" class="btn" data-toggle="modal" data-target="#cancelModal">
+                    <button type="button" class="btn">
                         <span class="glyphicon glyphicon-heart"></span>
                     </button>
                 </div>
                 <h5 class="media-heading">
-                    Camere Stylo 《感谢上帝，周五了》放映及映后导演交流
+                    <a href="calendar-span.html">跨月 demo</a>
                 </h5>
                 <div class="media-body text-muted">
                     <div class="space">
@@ -116,12 +235,12 @@
         <li class="list-group-item">
             <div class="media">
                 <div class="btns">
-                    <button type="button" class="btn" data-toggle="modal" data-target="#cancelModal">
+                    <button type="button" class="btn">
                         <span class="glyphicon glyphicon-heart"></span>
                     </button>
                 </div>
                 <h5 class="media-heading">
-                    电影到底应该咋学？纽约大学价值百万的秘籍全在这里
+                    <a href="calendar-event.html">活动详情 demo</a>
                 </h5>
                 <div class="media-body text-muted">
                     <div class="space">
@@ -154,15 +273,63 @@
                 </div>
             </div>
         </li>
+    </ul>
+
+    <div class="same-stall">
+        <div class="text-center">5月25日</div>
+    </div>
+
+    <ul class="list-group same-share">
         <li class="list-group-item">
             <div class="media">
                 <div class="btns">
-                    <button type="button" class="btn" data-toggle="modal" data-target="#cancelModal">
+                    <button type="button" class="btn">
                         <span class="glyphicon glyphicon-heart"></span>
                     </button>
                 </div>
                 <h5 class="media-heading">
-                    Camere Stylo 《感谢上帝，周五了》放映及映后导演交流
+                    <a href="calendar-link.html">已关联 demo</a>
+                </h5>
+                <div class="media-body text-muted">
+                    <div class="space">
+                            <p>在纽大读书，真的体会到东方那句，从绝望中寻找希望的感觉...</p>
+                    </div>
+                    <div class="pull-left">
+                        <div class="avatar">
+                            <a href="####"><img class="img-circle" src="img/010.png" alt="..."></a>
+                        </div>
+                        来自：豆瓣
+                    </div>
+                    <div class="pull-right">
+                        <div class="avatar">
+                            <a href="####"><img class="img-circle" src="img/001.png" alt="..."></a>
+                        </div>
+                        Kai 分享
+                    </div>
+                    <div class="pull-left">
+                        <span class="glyphicon glyphicon-time"></span>
+                        2017.06.01
+                    </div>
+                    <div class="pull-right">
+                        收藏：<span class="text-primary">123</span>
+                    </div>
+                </div>
+                <div class="media-right">
+                    <a href="####">
+                        <img class="media-object media-sm" src="img/011.png" alt="...">
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="media">
+                <div class="btns">
+                    <button type="button" class="btn">
+                        <span class="glyphicon glyphicon-heart"></span>
+                    </button>
+                </div>
+                <h5 class="media-heading">
+                    <a href="calendar-unlink.html">未关联 demo</a>
                 </h5>
                 <div class="media-body text-muted">
                     <div class="space">
@@ -197,21 +364,13 @@
         </li>
     </ul>
 
-</div>
-
-<!-- Modal1 -->
-<div class="modal fade" id="cancelModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-sm same-confirm" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                确定取消此关注吗？
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary pull-left" onclick="temp_cancel();"><strong>确定</strong></button>
-                <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">取消</button>
-            </div>
-        </div>
+    <div class="same-foot bg-white">
+        <a href="####" class="btn btn-block btn-go">
+            <img src="img/032.png" class="pull-left" />
+            &gt;分享电影活动得积分换影票&lt;
+        </a>
     </div>
+
 </div>
 
 
@@ -221,13 +380,9 @@
 <script src="js/jquery-2.1.0.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/app-same.js"></script>
 <script>
-    function temp_cancel() {
-        //
-        //todo actions...
-        //
-        $('#cancelModal').modal('hide');
-    }
+    //
 </script>
 </body>
 </html>
