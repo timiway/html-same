@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>电影订单</title>
+    <title>转票</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -24,19 +24,8 @@
             <span class="point bg-warning"></span>
         </div>
     </div>
-    <div class="same-search">
-        <div class="input-group input-group-sm">
-                <span class="input-group-addon block">
-                    <img src="img/013.png"/>
-                </span>
-            <input type="text" class="form-control block" placeholder="搜索电影创建你的电影订单"/>
-                <span class="input-group-btn">
-                    <a href="####" class="btn block">
-                        <img src="img/012.png"/>
-                    </a>
-                </span>
-        </div>
-    </div>
+    <p class="navbar-text title"><strong>详情</strong></p>
+    <div class="clearfix"></div>
 </nav>
 <div class="container same-sider">
     <div class="same-side-header">
@@ -51,7 +40,7 @@
         </div>
     </div>
     <div class="list-group same-list-side">
-        <a href="order.html" class="list-group-item active">
+        <a href="order.html" class="list-group-item">
             电影订单
         </a>
         <a href="calendar.html" class="list-group-item">
@@ -99,7 +88,7 @@
     </div>
 </div>
 
-<div class="container same-main nav-space same-slide">
+<div class="container same-main nav-space bar-space same-slide">
 
     <ul class="list-group same-media">
         <li class="list-group-item">
@@ -111,71 +100,92 @@
                 </div>
                 <div class="media-body">
                     <h5 class="media-heading"><a href="####">青蛇</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        211人想看&nbsp;&nbsp;&nbsp;
-                        <span class="text-primary">售票中</span>
-                    </p>
+                    <div class="text-line3">
+                        <p class="text-muted">
+                            1993年&nbsp;&nbsp;&nbsp;
+                            香港&nbsp;&nbsp;&nbsp;
+                            99分钟
+                        </p>
+                        <p class="text-primary">
+                            <span class="h3">10</span>
+                            张票在转
+                        </p>
+                    </div>
                 </div>
                 <div class="media-right">
                     <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
+                        <div class="score-number text-primary">&nbsp;</div>
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="btn-onoff">
-                        <a class="btn btn-default" href="####" role="button">已关注</a>
-                        &nbsp;
-                        <a class="text-muted" href="#confirmModal" role="button" data-toggle="modal"><small>取消</small></a>
-                    </div>
+                    <a id="btnNote" class="btn btn-primary" href="#noteModal" role="button" data-toggle="modal">
+                        <span class="glyphicon glyphicon-bell"></span>
+                        提醒
+                    </a>
+                    <a id="btnCancel" class="btn btn-default hide" href="#cancelModal" role="button" data-toggle="modal">
+                        取消提醒
+                    </a>
                 </div>
             </div>
         </li>
     </ul>
 
-
     <div class="panel same-ticket">
         <div class="panel-heading">
-            <div class="panel-title">请选择场次。</div>
-            <div class="panel-line"></div>
+            <div class="panel-title text-center">你选择购买 <span class="text-primary">2</span> 张影票</div>
         </div>
         <div class="panel-body">
-            <dl class="dl-same">
-                <dt>放映时间：</dt>
-                <dd>
-                    <p>2016年11月8日 10:10</p>
-                </dd>
-                <dt>放映地点：</dt>
-                <dd>
-                    <p>2017.02.15 电影资料馆-小西天</p>
-                </dd>
-            </dl>
-            <dl class="dl-same">
-                <dt>放映时间：</dt>
-                <dd>
-                    <p>2016年11月8日 10:10</p>
-                </dd>
-                <dt>放映地点：</dt>
-                <dd>
-                    <p>2017.02.15 电影资料馆-小西天</p>
-                </dd>
-            </dl>
+            <div class="line"><span class="c l"></span><span class="c r"></span></div>
+            <ul class="list-group count">
+                <li class="list-group-item">
+                    <div class="pull-right"><strong class="number">35</strong> 元</div>
+                    单人票：<strong class="number">1</strong> 张
+                </li>
+                <li class="list-group-item">
+                    <div class="pull-right"><strong class="number">120</strong> 元</div>
+                    双人票：<strong class="number">2</strong> 张
+                </li>
+            </ul>
+            <div class="panel-line"></div>
+            <div class="text-center">
+                共计 <strong class="total">155</strong> 元
+            </div>
         </div>
+    </div>
+
+    <div class="text-center">
+        <p id="freeText">你有 <span class="text-primary">3</span> 张SAME积分影票可以使用</p>
     </div>
 
 </div>
 
+<div class="navbar-fixed-bottom same-slide">
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="temp_submit()">
+        <strong>购票</strong>
+        <img src="img/026.png" class="icon-weixin"/>
+    </button>
+</div>
+
 <!-- Modal1 -->
-<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog">
+<div class="modal fade" id="noteModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-sm same-confirm" role="document">
         <div class="modal-content">
             <div class="modal-body text-center">
-                <p>取消关注后你将不能及时收到开票通知。</p>
-                <p>确定取消关注影片 <strong class="text-primary">青蛇</strong> 吗？</p>
+                <p>设置提醒可以收到影片最新的转票信息。</p>
+                <p>确定 <strong class="text-primary">设置提醒</strong> 吗？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-left" onclick="temp_note();"><strong>确定</strong></button>
+                <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal2 -->
+<div class="modal fade" id="cancelModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm same-confirm" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <p>取消提醒将不能接收到此影片最新的转票信息。</p>
+                <p>确定 <strong class="text-primary">取消提醒</strong> 吗？</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary pull-left" onclick="temp_cancel();"><strong>确定</strong></button>
@@ -184,7 +194,21 @@
         </div>
     </div>
 </div>
-
+<!-- Modal3 -->
+<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm same-confirm" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <p>你有 <span class="text-primary">3</span> 张SAME积分影票，是否使用？</p>
+                <p class="text-primary">注：使用SAME积分影票不可转让</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-left" onclick="location.href='transfer-out-bill1.html'"><strong>确定</strong></button>
+                <button type="button" class="btn btn-primary pull-right" onclick="location.href='bill-e.html'">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -195,11 +219,28 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app-same.js"></script>
 <script>
+    function temp_note() {
+        //
+        //todo actions...
+        //
+        $('#btnNote').addClass("hide");
+        $('#btnCancel').removeClass("hide");
+        $('.modal').modal('hide');
+    }
     function temp_cancel() {
         //
         //todo actions...
         //
-        $('#confirmModal').modal('hide');
+        $('#btnNote').removeClass("hide");
+        $('#btnCancel').addClass("hide");
+        $('.modal').modal('hide');
+    }
+    //
+    function temp_submit() {
+        //
+        //todo actions...
+        //
+        $('#confirmModal').modal('show');
     }
 </script>
 </body>

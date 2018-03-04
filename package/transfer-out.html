@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>电影订单</title>
+    <title>转票</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -24,20 +24,11 @@
             <span class="point bg-warning"></span>
         </div>
     </div>
-    <div class="same-search">
-        <div class="input-group input-group-sm">
-                <span class="input-group-addon block">
-                    <img src="img/013.png"/>
-                </span>
-            <input type="text" class="form-control block" placeholder="搜索电影创建你的电影订单"/>
-                <span class="input-group-btn">
-                    <a href="####" class="btn block">
-                        <img src="img/012.png"/>
-                    </a>
-                </span>
-        </div>
-    </div>
+    <p class="navbar-text title"><strong>转出票</strong></p>
+    <div class="clearfix"></div>
 </nav>
+
+
 <div class="container same-sider">
     <div class="same-side-header">
         <div class="media">
@@ -51,7 +42,7 @@
         </div>
     </div>
     <div class="list-group same-list-side">
-        <a href="order.html" class="list-group-item active">
+        <a href="order.html" class="list-group-item">
             电影订单
         </a>
         <a href="calendar.html" class="list-group-item">
@@ -79,7 +70,7 @@
     </div>
     <div class="same-list-side same-list-submenu">
         <ul class="list-group" id="submenu-a">
-            <a href="transfer-out.html" class="list-group-item">
+            <a href="transfer-out.html" class="list-group-item active">
                 转出票
             </a>
             <a href="transfer-my.html" class="list-group-item">
@@ -99,33 +90,36 @@
     </div>
 </div>
 
-<div class="container same-main nav-space same-slide">
+<div class="container same-main nav-space bar-space same-slide">
+
 
     <ul class="list-group same-media">
         <li class="list-group-item">
             <div class="media">
                 <div class="media-left">
                     <a href="####">
-                        <img class="media-object" src="img/006.png" alt="...">
+                        <img class="media-object" src="img/002.png" alt="...">
                     </a>
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><a href="####">太阳照常升起</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        0人想看
-                    </p>
+                    <h5 class="media-heading"><a href="transfer-out-details.html">demo:转出详情</a></h5>
+                    <div class="text-line3">
+                        <p class="text-muted">
+                            1993年&nbsp;&nbsp;&nbsp;
+                            香港&nbsp;&nbsp;&nbsp;
+                            99分钟
+                        </p>
+                        <p class="text-primary">
+                            <span class="h3">5</span>
+                            张票在转
+                        </p>
+                    </div>
                 </div>
                 <div class="media-right">
                     <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
+                        <div class="score-number text-primary">&nbsp;</div>
                     </div>
-                    <a class="btn btn-info" href="####" role="button">创建订单</a>
+                    <a class="btn btn-primary" href="transfer-out-details.html" role="button">查看</a>
                 </div>
             </div>
         </li>
@@ -133,26 +127,28 @@
             <div class="media">
                 <div class="media-left">
                     <a href="####">
-                        <img class="media-object" src="img/006.png" alt="...">
+                        <img class="media-object" src="img/003.png" alt="...">
                     </a>
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><a href="####">太阳照常升起</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        0人想看
-                    </p>
+                    <h5 class="media-heading"><a href="transfer-out-complete.html">demo:都转完</a></h5>
+                    <div class="text-line3">
+                        <p class="text-muted">
+                            1993年&nbsp;&nbsp;&nbsp;
+                            香港&nbsp;&nbsp;&nbsp;
+                            99分钟
+                        </p>
+                        <p class="text-muted">
+                            <span class="h3">0</span>
+                            张票在转
+                        </p>
+                    </div>
                 </div>
                 <div class="media-right">
                     <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
+                        <div class="score-number text-primary">&nbsp;</div>
                     </div>
-                    <a class="btn btn-info" href="####" role="button">创建订单</a>
+                    <a class="btn btn-primary" href="transfer-out-complete.html" role="button">查看</a>
                 </div>
             </div>
         </li>
@@ -160,53 +156,28 @@
             <div class="media">
                 <div class="media-left">
                     <a href="####">
-                        <img class="media-object" src="img/006.png" alt="...">
+                        <img class="media-object" src="img/005.png" alt="...">
                     </a>
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><a href="####">太阳照常升起</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        0人想看
-                    </p>
+                    <h5 class="media-heading"><a href="transfer-out-has.html">demo:已买过</a></h5>
+                    <div class="text-line3">
+                        <p class="text-muted">
+                            1993年&nbsp;&nbsp;&nbsp;
+                            香港&nbsp;&nbsp;&nbsp;
+                            99分钟
+                        </p>
+                        <p class="text-muted">
+                            <span class="h3">0</span>
+                            张票在转
+                        </p>
+                    </div>
                 </div>
                 <div class="media-right">
                     <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
+                        <div class="score-number text-primary">&nbsp;</div>
                     </div>
-                    <a class="btn btn-info" href="####" role="button">创建订单</a>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="media">
-                <div class="media-left">
-                    <a href="####">
-                        <img class="media-object" src="img/006.png" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h5 class="media-heading"><a href="####">太阳照常升起</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        0人想看
-                    </p>
-                </div>
-                <div class="media-right">
-                    <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
-                    </div>
-                    <a class="btn btn-info" href="####" role="button">创建订单</a>
+                    <a class="btn text-muted" href="transfer-out-has.html" role="button">已结束</a>
                 </div>
             </div>
         </li>
@@ -214,6 +185,13 @@
 
 </div>
 
+<div class="navbar-fixed-bottom same-slide">
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='transfer-out-a.html'">
+        <span class="glyphicon glyphicon-transfer text-info"></span>
+        &nbsp;
+        <strong>我要转票</strong>
+    </button>
+</div>
 
 
 
@@ -223,5 +201,8 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app-same.js"></script>
+<script>
+    //
+</script>
 </body>
 </html>

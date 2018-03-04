@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>电影订单</title>
+    <title>转票</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -24,20 +24,11 @@
             <span class="point bg-warning"></span>
         </div>
     </div>
-    <div class="same-search">
-        <div class="input-group input-group-sm">
-                <span class="input-group-addon block">
-                    <img src="img/013.png"/>
-                </span>
-            <input type="text" class="form-control block" placeholder="搜索电影创建你的电影订单"/>
-                <span class="input-group-btn">
-                    <a href="####" class="btn block">
-                        <img src="img/012.png"/>
-                    </a>
-                </span>
-        </div>
-    </div>
+    <p class="navbar-text title"><strong>求转票</strong></p>
+    <div class="clearfix"></div>
 </nav>
+
+
 <div class="container same-sider">
     <div class="same-side-header">
         <div class="media">
@@ -51,7 +42,7 @@
         </div>
     </div>
     <div class="list-group same-list-side">
-        <a href="order.html" class="list-group-item active">
+        <a href="order.html" class="list-group-item">
             电影订单
         </a>
         <a href="calendar.html" class="list-group-item">
@@ -85,7 +76,7 @@
             <a href="transfer-my.html" class="list-group-item">
                 我的转票
             </a>
-            <a href="transfer-in.html" class="list-group-item">
+            <a href="transfer-in.html" class="list-group-item active">
                 求转票
             </a>
             <a href="transfer-other.html" class="list-group-item">
@@ -99,7 +90,8 @@
     </div>
 </div>
 
-<div class="container same-main nav-space same-slide">
+<div class="container same-main nav-space bar-space same-slide">
+
 
     <ul class="list-group same-media">
         <li class="list-group-item">
@@ -110,81 +102,67 @@
                     </a>
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><a href="####">青蛇</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        211人想看&nbsp;&nbsp;&nbsp;
-                        <span class="text-primary">售票中</span>
-                    </p>
+                    <h5 class="media-heading"><a href="transfer-in-details.html">demo:求转票详情</a></h5>
+                    <div class="text-line3">
+                        <p class="text-muted">
+                            1993年&nbsp;&nbsp;&nbsp;
+                            香港&nbsp;&nbsp;&nbsp;
+                            99分钟
+                        </p>
+                        <p class="text-primary">
+                            <span class="h3">5</span>
+                            人在求票
+                        </p>
+                    </div>
                 </div>
                 <div class="media-right">
                     <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
+                        <div class="score-number text-primary">&nbsp;</div>
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="btn-onoff">
-                        <a class="btn btn-default" href="####" role="button">已关注</a>
-                        &nbsp;
-                        <a class="text-muted" href="#confirmModal" role="button" data-toggle="modal"><small>取消</small></a>
+                    <a class="btn btn-primary" href="transfer-in-details.html" role="button">查看</a>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="media">
+                <div class="media-left">
+                    <a href="####">
+                        <img class="media-object" src="img/005.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading"><a href="####">霸王别姬</a></h5>
+                    <div class="text-line3">
+                        <p class="text-muted">
+                            1993年&nbsp;&nbsp;&nbsp;
+                            香港&nbsp;&nbsp;&nbsp;
+                            99分钟
+                        </p>
+                        <p class="text-muted">
+                            <span class="h3">0</span>
+                            人在求票
+                        </p>
                     </div>
+                </div>
+                <div class="media-right">
+                    <div class="score pull-right text-center">
+                        <div class="score-number text-primary">&nbsp;</div>
+                    </div>
+                    <a class="btn text-muted" href="####" role="button">已结束</a>
                 </div>
             </div>
         </li>
     </ul>
 
-
-    <div class="panel same-ticket">
-        <div class="panel-heading">
-            <div class="panel-title">请选择场次。</div>
-            <div class="panel-line"></div>
-        </div>
-        <div class="panel-body">
-            <dl class="dl-same">
-                <dt>放映时间：</dt>
-                <dd>
-                    <p>2016年11月8日 10:10</p>
-                </dd>
-                <dt>放映地点：</dt>
-                <dd>
-                    <p>2017.02.15 电影资料馆-小西天</p>
-                </dd>
-            </dl>
-            <dl class="dl-same">
-                <dt>放映时间：</dt>
-                <dd>
-                    <p>2016年11月8日 10:10</p>
-                </dd>
-                <dt>放映地点：</dt>
-                <dd>
-                    <p>2017.02.15 电影资料馆-小西天</p>
-                </dd>
-            </dl>
-        </div>
-    </div>
-
 </div>
 
-<!-- Modal1 -->
-<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-sm same-confirm" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <p>取消关注后你将不能及时收到开票通知。</p>
-                <p>确定取消关注影片 <strong class="text-primary">青蛇</strong> 吗？</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary pull-left" onclick="temp_cancel();"><strong>确定</strong></button>
-                <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">取消</button>
-            </div>
-        </div>
-    </div>
+<div class="navbar-fixed-bottom same-slide">
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='transfer-in-a.html'">
+        <span class="glyphicon glyphicon-transfer text-info"></span>
+        &nbsp;
+        <strong>我要求票</strong>
+    </button>
 </div>
-
 
 
 
@@ -195,12 +173,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app-same.js"></script>
 <script>
-    function temp_cancel() {
-        //
-        //todo actions...
-        //
-        $('#confirmModal').modal('hide');
-    }
+    //
 </script>
 </body>
 </html>

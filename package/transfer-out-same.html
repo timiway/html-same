@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>转票</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-same.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top same-navbar same-slide">
+    <div class="navbar-text pull-left">
+        <div class="same-menu">
+            <a href="####"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            <span class="point bg-warning"></span>
+        </div>
+    </div>
+    <p class="navbar-text title"><strong>转出票详情</strong></p>
+    <div class="clearfix"></div>
+</nav>
+<div class="container same-sider">
+    <div class="same-side-header">
+        <div class="media">
+            <div class="media-left avatar">
+                <a href="####"><img class="img-rounded" src="img/001.png" alt="..."></a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading username">kai</h4>
+                <p><span class="text-warning">256</span> 分</p>
+            </div>
+        </div>
+    </div>
+    <div class="list-group same-list-side">
+        <a href="order.html" class="list-group-item">
+            电影订单
+        </a>
+        <a href="calendar.html" class="list-group-item">
+            分享日历
+            <span class="point bg-warning"></span>
+        </a>
+        <a href="post.html" class="list-group-item">
+            分享文章
+        </a>
+        <a href="####" class="list-group-item" data-submenu="#submenu-a">
+            转　　票
+            <span class="point bg-warning"></span>
+        </a>
+        <a href="note.html" class="list-group-item">
+            手　　账
+            <span class="point bg-warning"></span>
+        </a>
+        <a href="home.html" class="list-group-item">
+            我　　的
+            <span class="point bg-warning"></span>
+        </a>
+        <a href="about.html" class="list-group-item">
+            关于我们
+        </a>
+    </div>
+    <div class="same-list-side same-list-submenu">
+        <ul class="list-group" id="submenu-a">
+            <a href="transfer-out.html" class="list-group-item">
+                转出票
+            </a>
+            <a href="transfer-my.html" class="list-group-item">
+                我的转票
+            </a>
+            <a href="transfer-in.html" class="list-group-item">
+                求转票
+            </a>
+            <a href="transfer-other.html" class="list-group-item">
+                我的求票
+            </a>
+            <a href="transfer-note.html" class="list-group-item">
+                转票提醒
+                <span class="point bg-warning"></span>
+            </a>
+        </ul>
+    </div>
+</div>
+
+<div class="container same-main nav-space bar-space same-slide">
+
+    <ul class="list-group same-media">
+        <li class="list-group-item">
+            <div class="media">
+                <div class="media-left">
+                    <a href="####">
+                        <img class="media-object" src="img/002.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading"><a href="####">青蛇</a></h5>
+                    <div class="text-line3">
+                        <p class="text-muted">
+                            1993年&nbsp;&nbsp;&nbsp;
+                            香港&nbsp;&nbsp;&nbsp;
+                            99分钟
+                        </p>
+                        <p class="text-primary">
+                            <span class="h3">10</span>
+                            张票在转
+                        </p>
+                    </div>
+                </div>
+                <div class="media-right">
+                    <div class="score pull-right text-center">
+                        <div class="score-number text-primary">&nbsp;</div>
+                    </div>
+                    <a id="btnNote" class="btn btn-primary" href="#noteModal" role="button" data-toggle="modal">
+                        <span class="glyphicon glyphicon-bell"></span>
+                        提醒
+                    </a>
+                    <a id="btnCancel" class="btn btn-default hide" href="#cancelModal" role="button" data-toggle="modal">
+                        取消提醒
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="panel same-ticket">
+        <div class="panel-body">
+            <div class="media same-post">
+                <div class="media-left">
+                    <div class="avatar">
+                        <a href="####"><img class="img-circle" src="img/001.png" alt="..."></a>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <div class="pull-right text-right">
+                        <p>SAME放映</p>
+                        <p>
+                            <span class="h3"><strong>30</strong></span>
+                            元/张
+                        </p>
+                    </div>
+                    <h5 class="media-heading">kai的转票</h5>
+                    <p>2016年11月8日 10：00</p>
+                    <p>法国文化中心</p>
+                    <p>
+                        <span class="h3">2</span>
+                        张
+                    </p>
+
+                    <div class="post-ticket">
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn btn-default">
+                                <span class="text-default">单人票</span>
+                            </div>
+                            <div class="btn btn-default">
+                                <div class="text-primary">
+                                    <span class="h3"><strong>30</strong></span>
+                                    元/张
+                                </div>
+                            </div>
+                            <div class="btn btn-primary">选择</div>
+                        </div>
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn btn-default">
+                                <span class="text-default">单人票</span>
+                            </div>
+                            <div class="btn btn-default">
+                                <div class="text-primary">
+                                    <span class="h3"><strong>30</strong></span>
+                                    元/张
+                                </div>
+                            </div>
+                            <div class="btn btn-primary">选择</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <p>你有 <span class="text-primary">3</span> 张SAME积分影票可以使用</p>
+    </div>
+
+</div>
+
+<div class="navbar-fixed-bottom same-slide">
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="temp_submit()">
+        <strong>确认</strong>
+    </button>
+</div>
+
+<!-- Modal1 -->
+<div class="modal fade" id="noteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm same-confirm" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <p>设置提醒可以收到影片最新的转票信息。</p>
+                <p>确定 <strong class="text-primary">设置提醒</strong> 吗？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-left" onclick="temp_note();"><strong>确定</strong></button>
+                <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal2 -->
+<div class="modal fade" id="cancelModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm same-confirm" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <p>取消提醒将不能接收到此影片最新的转票信息。</p>
+                <p>确定 <strong class="text-primary">取消提醒</strong> 吗？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-left" onclick="temp_cancel();"><strong>确定</strong></button>
+                <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal3 -->
+<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm same-confirm" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <p>请选择一张需要购买的影票。</p>
+            </div>
+            <div class="modal-footer">
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.1.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app-same.js"></script>
+<script>
+    function temp_note() {
+        //
+        //todo actions...
+        //
+        $('#btnNote').addClass("hide");
+        $('#btnCancel').removeClass("hide");
+        $('.modal').modal('hide');
+    }
+    function temp_cancel() {
+        //
+        //todo actions...
+        //
+        $('#btnNote').removeClass("hide");
+        $('#btnCancel').addClass("hide");
+        $('.modal').modal('hide');
+    }
+    //
+    function temp_submit() {
+        if (!$(".post-ticket .btn-group.active").size()) {
+            $('#confirmModal').modal('show');
+        } else {
+            //
+            //todo actions...
+            //
+            window.location.href = "transfer-out-bill.html";
+        }
+    }
+</script>
+</body>
+</html>

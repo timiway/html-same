@@ -34,6 +34,11 @@ small {color: inherit !important;}
 .btn-go { background-color: #fc6; color: #fff; padding: 10px;}
 .btn-go img { width: 18px; height: 18px;}
 
+.btn-group.active .btn { background-color: #fff0d2 !important;}
+.btn-group.active .btn-primary { background-color: #ffcc66 !important;}
+.btn-group.muted .btn { color: #999; background-color: #eee !important;}
+.btn-group.muted .btn-primary { color: #fff; background-color: #999 !important;}
+
 .navbar-fixed-bottom { text-align: center;}
 .navbar-fixed-bottom p { margin-bottom: 20px;}
 .navbar-fixed-bottom .btn { color: #fff; border-radius: 0; height: 48px; padding: 0; background-color: #8ec7ff;}
@@ -89,8 +94,8 @@ small {color: inherit !important;}
 .same-bar .btn img { width: 20px; height: 20px; vertical-align: text-top;}
 .same-bar .btn.on { color: #fff; background-color: #fc6;}
 
-.same-sider { width: 170px; height: 100%; position: fixed; left: -170px; background-color: #333;}
-.same-main { position: relative; left: 0;}
+.same-sider { width: 170px; height: 100%; position: fixed; left: -170px; background-color: #333; z-index: 1031;}
+.same-main { position: relative; left: 0; z-index: 1029;}
 .same-main.nav-space { padding-top: 54px;}
 .same-main.bar-space { padding-bottom: 48px;}
 
@@ -156,7 +161,7 @@ small {color: inherit !important;}
 .same-form .form-control { background-color: #efefef;}
 
 .same-title { padding: 15px 0; margin: 0 15px; border-bottom: 1px solid #e7e7e7;}
-.same-stall { padding: 5px 0;}
+.same-stall { padding: 8px 0;}
 .same-embed { border-top: 1px solid #e7e7e7; margin: 0 10px;}
 
 .same-list { padding-left: 10px; padding-right: 10px; margin-bottom: 15px; background-color: #fff;}
@@ -166,10 +171,16 @@ small {color: inherit !important;}
 .same-list .glyphicon-menu-right { margin-top: 3px; margin-left: 0px; color: #ccc;}
 .same-list .text { width: 50px;}
 
-.same-list-side { font-size: 110%; padding: 5px 20px;}
-.same-list-side .list-group-item { border: none; border-radius: 0; color: #fff; background: none; padding: 20px;}
+.same-list-side { font-size: 110%; padding: 5px 0; color: #fff;}
+.same-list-side .list-group-item { border: none; border-radius: 0; color: #fff; background: none; padding: 20px; padding-left: 40px;}
 .same-list-side .list-group-item.active { color: #39f;}
-.same-list-side .point { position: absolute; padding: 5px; border-radius: 10px; left: 90px;}
+.same-list-side .list-group-item.selected { background-color: #262626;}
+.same-list-side .point { position: absolute; padding: 5px; border-radius: 10px; left: 110px; top: 20px;}
+.same-list-side .submenu { display: none;}
+
+.same-list-submenu { position: absolute; top: 0; left: 100%; width: 100px; height: 100%; background-color: #262626;}
+.same-list-submenu .list-group-item { padding: 20px 15px;}
+.same-list-submenu .point { left: 85px;}
 
 .same-media { padding-left: 15px; padding-right: 15px; background-color: #fff; margin-bottom: 0;}
 .same-media .list-group-item { border-width: 1px 0; border-radius: 0; padding: 15px 0;}
@@ -270,6 +281,19 @@ small {color: inherit !important;}
 .same-ticket .count .list-group-item { width: 200px; padding: 10px 0;}
 .same-ticket .count .number { font-size: 140%;}
 .same-ticket .total { font-size: 240%; line-height: 2em;}
+
+.same-post .media-left img { width: 60px;}
+.same-post .media-heading { margin-bottom: 10px; color: #000;}
+.same-post .media-body { padding-bottom: 20px;}
+.same-post .media-body p { margin-bottom: 5px;}
+.same-post .media-body .btn { width: 90px;}
+.same-post .post-text { padding: 15px 0; line-height: 2em;}
+.same-post .post-ticket { padding: 10px 0; max-width: 280px;}
+.same-post .post-ticket .btn-group { margin-bottom: 15px; color: #fff;}
+.same-post .post-ticket .btn { border: none; padding: 0; height: 40px; width: auto;}
+.same-post .same-form { padding: 0;}
+.same-post .input-group-addon { border: 0; color: #999;}
+.same-post [class^=col-] { padding-right: 5px;}
 
 .same-users { margin: 10px; padding-bottom: 10px; font-size: 85%;}
 .same-users .title { margin-bottom: 10px;}
