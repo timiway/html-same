@@ -160,6 +160,10 @@ small {color: inherit !important;}
 .same-form .form-group { position: relative;}
 .same-form .form-control { background-color: #efefef;}
 
+.same-register {}
+.same-register label { color: #39f; margin-bottom: 10px;}
+.same-register .radio-inline { color: #999;}
+
 .same-title { padding: 15px 0; margin: 0 15px; border-bottom: 1px solid #e7e7e7;}
 .same-stall { padding: 8px 0;}
 .same-embed { border-top: 1px solid #e7e7e7; margin: 0 10px;}
@@ -201,6 +205,8 @@ small {color: inherit !important;}
 .same-media .status { width: 4em;}
 .same-media .status-header { margin-bottom: 15px;}
 .same-media .status-number { font-size: 1.4em;}
+.same-media .status2 { padding: 10px 0 20px;}
+.same-media .status2 .glyphicon { font-size: 1.2em; vertical-align: middle;}
 .same-media .code-img { width: 26px; height: 26px;}
 
 .same-event { margin-left: 95px; margin-right: 15px; border-top: 1px solid #e7e7e7;}
@@ -295,6 +301,9 @@ small {color: inherit !important;}
 .same-post .input-group-addon { border: 0; color: #999;}
 .same-post [class^=col-] { padding-right: 5px;}
 
+.same-text { padding: 30px; background-color: #fff;}
+.same-text p { line-height: 2em; margin-bottom: 30px;}
+
 .same-users { margin: 10px; padding-bottom: 10px; font-size: 85%;}
 .same-users .title { margin-bottom: 10px;}
 .same-users .list-group-item { font-size: 90%; width: 16.6%; height: 70px; overflow: hidden; background: none; border: none; padding: 0;}
@@ -307,5 +316,9 @@ small {color: inherit !important;}
 .same-code p { margin: 0 5px; font-size: 120%;}
 
 .same-foot { padding: 10px;}
+
+.same-error { background: #fc6; padding: 50px 0;}
+.same-error p { color: #fff;}
+.same-error .img { margin: auto; width: 50%; max-width: 390px;}
 
 
