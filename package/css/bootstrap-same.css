@@ -48,7 +48,7 @@ small {color: inherit !important;}
 
 .navbar-collapse { background-color: #0b85ff; margin: 0 -10px; padding: 0; box-shadow: none;}
 
-.navbar-filter { padding: 5px;}
+.navbar-filter { padding: 5px; text-align: center;}
 .navbar-filter .btn { padding: 6px; border-radius: 0;}
 .navbar-filter .btn img { width: 18px; height: 18px;}
 
@@ -73,6 +73,7 @@ small {color: inherit !important;}
 .dl-same dd p { margin-bottom: 5px;}
 
 .space-bar { height: 50px;}
+.space-calender { height: 80px;}
 
 .same-slide { width: 100%;}
 
@@ -128,7 +129,7 @@ small {color: inherit !important;}
 .same-side-header .username { color: #fff; margin-bottom: 10px;}
 .same-side-header p { color: #fff; margin: 0; font-size: 85%;}
 
-.same-calendar { font-size: 85%; height: 80px; background-color: #fbfbfb;}
+.same-calendar { font-size: 85%; height: 80px; background-color: #fbfbfb; top: 55px;}
 .same-calendar p { margin-bottom: 5px;}
 .same-calendar .btn { height: 80px; line-height: 68px; background-color: #f3f3f3; border-radius: 0;}
 .same-calendar .row { text-align: center;}
@@ -284,6 +285,7 @@ small {color: inherit !important;}
 .same-ticket .list-group-item { color: inherit; background: none !important; border: none; padding: 0; width: 33.33%; margin: auto;}
 .same-ticket .list-group-item>* { color: inherit !important;}
 .same-ticket .list-group-item.disabled { color: #ccc !important;}
+.same-ticket .col-2 .list-group-item { width: 50%;}
 .same-ticket .count .list-group-item { width: 200px; padding: 10px 0;}
 .same-ticket .count .number { font-size: 140%;}
 .same-ticket .total { font-size: 240%; line-height: 2em;}
