@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>我的</title>
+    <title>我去2019</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -16,6 +16,21 @@
     <![endif]-->
 </head>
 <body>
+
+<nav class="navbar navbar-fixed-top same-navbar same-inverse same-slide">
+    <div class="navbar-text pull-left">
+        <div class="same-menu">
+            <a href="####"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            <span class="point bg-warning"></span>
+        </div>
+    </div>
+    <p class="navbar-text pull-right">
+    </p>
+    <p class="navbar-text title"><strong>一句台词</strong></p>
+    <div class="clearfix"></div>
+
+</nav>
+
 
 <div class="container same-sider">
     <div class="same-side-header">
@@ -51,7 +66,7 @@
             手　　账
             <span class="point bg-warning"></span>
         </a>
-        <a href="home.html" class="list-group-item active">
+        <a href="home.html" class="list-group-item">
             我　　的
             <span class="point bg-warning"></span>
         </a>
@@ -88,80 +103,67 @@
             <a href="ranking.html" class="list-group-item">
                 排行榜
             </a>
-            <a href="question.html" class="list-group-item">
+            <a href="question.html" class="list-group-item active">
                 我要出题
             </a>
         </ul>
     </div>
 </div>
 
-<div class="container same-main same-slide">
+<div class="container same-stage stage-guess bg-white same-slide">
 
-    <div class="same-user-header">
-        <div class="pull-left">
-            <div class="same-menu">
-                <a href="####"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                <span class="point bg-warning"></span>
-            </div>
+
+    <div class="guess-data">
+
+        <ul class="list-group same-media">
+            <li class="list-group-item">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="####">
+                            <img class="media-object" src="img/006.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading"><a href="####">青蛇</a></h5>
+                        <p class="text-muted text-multiline">
+                            1993年&nbsp;&nbsp;&nbsp;
+                            香港&nbsp;&nbsp;&nbsp;
+                            99分钟
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <div class="score pull-right text-center">
+                            <div class="score-number text-warning">8.3</div>
+                            <div class="text-muted"><small>豆瓣</small></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="guess-body center-block text-center">
+        <div class="guess-form">
+            <p class="text-warning">请给出一句台词作为猜题线索</p>
+            <p>
+                <textarea id="text2" class="form-control" rows="10" placeholder="请输入台词..."></textarea>
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="">
+                    <span>提交</span>
+                </button>
+            </p>
+            <p class="text-muted">
+                <i class="glyphicon glyphicon-info-sign text-warning"></i>
+                提交审核通过后，你的题目将出现在开放答题区。
+            </p>
         </div>
-        <div class="clearfix"></div>
-        <div class="avatar center-block">
-            <a href="####"><img class="img-circle" src="img/001.png" alt="..."></a>
-            <span class="glyphicon glyphicon-pencil"></span>
-        </div>
-        <div class="username text-center">kai</div>
     </div>
 
-    <div class="list-group same-list">
-        <a href="await.html" class="list-group-item">
-            <span class="glyphicon glyphicon-menu-right pull-right"></span>
-            <span class="text text-muted pull-right"><strong class="text-primary">128</strong></span>
-            我想看的
-        </a>
-        <a href="ticket.html" class="list-group-item">
-            <span class="glyphicon glyphicon-menu-right pull-right"></span>
-            <span class="text text-muted pull-right"><strong class="text-primary">1</strong>/21</span>
-            我的影票
-        </a>
-        <a href="integral.html" class="list-group-item">
-            <span class="glyphicon glyphicon-menu-right pull-right"></span>
-            <span class="text text-primary pull-right"><strong>288</strong> <small>分</small></span>
-            我的积分
-        </a>
-    </div>
-
-    <div class="list-group same-list">
-        <a href="share.html" class="list-group-item">
-            <span class="glyphicon glyphicon-menu-right pull-right"></span>
-            <span class="text text-primary pull-right"><strong>128</strong></span>
-            我的分享
-        </a>
-        <a href="follow.html" class="list-group-item">
-            <span class="glyphicon glyphicon-menu-right pull-right"></span>
-            <span class="text text-primary pull-right"><strong>22</strong></span>
-            我关注的
-        </a>
-        <a href="remind.html" class="list-group-item">
-            <span class="glyphicon glyphicon-menu-right pull-right"></span>
-            <span class="text text-primary pull-right"><strong>2</strong></span>
-            我的提醒
-        </a>
-    </div>
-
-    <div class="list-group same-list">
-        <a href="feedback.html" class="list-group-item">
-            <span class="glyphicon glyphicon-menu-right pull-right"></span>
-            意见反馈
-        </a>
-        <a href="contact.html" class="list-group-item">
-            <span class="glyphicon glyphicon-menu-right pull-right"></span>
-            联系客服
-        </a>
-    </div>
 
 </div>
-
-
 
 
 
@@ -170,5 +172,8 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app-same.js"></script>
+<script>
+    //
+</script>
 </body>
 </html>
