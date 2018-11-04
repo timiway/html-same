@@ -91,6 +91,9 @@ small {color: inherit !important;}
 .same-navbar .filter { margin-right: -10px;}
 .same-navbar .filter .btn { height: 54px; background-color: #0b85ff; border-radius: 0;}
 .same-navbar .filter .btn.collapsed { background-color: inherit;}
+.same-navbar .tab { font-size: 85%; padding: 0 10px;}
+.same-navbar .tab+.tab { border-left: 1px solid #c4c4c4;}
+.same-navbar .active { color: #dd4416;}
 
 .same-navbar.same-inverse { background: #fff; color: #333;}
 .same-navbar.same-inverse a { color: #333;}
@@ -172,6 +175,7 @@ small {color: inherit !important;}
 
 .stage-guess { padding-top: 55px; font-family: Helvetica;}
 .stage-guess .text-warning { color: #dd4416;}
+.stage-guess .bg-warning { background-color: #f7d9d0;}
 .stage-guess .btn-primary { background-color: #dd4416 !important;}
 .stage-guess .btn-warning { background-color: #f5d9d0 !important; border: none; color: #333;}
 
@@ -194,6 +198,7 @@ small {color: inherit !important;}
 .guess-form textarea.form-control,
 .guess-form textarea.form-control::-webkit-input-placeholder { text-align: left;}
 .guess-form .input-group-btn .btn { background-color: #efefef; height: 34px;}
+.guess-form .avatar img { width: 60px; height: 60px;}
 
 .guess-btns {}
 .guess-btns .form-group { margin-top: 20px;}
@@ -217,9 +222,18 @@ small {color: inherit !important;}
 .guess-data { border-top: 1px solid #f3f3f3; margin-bottom: 20px;}
 .guess-data .same-media { padding: 0 20px;}
 .guess-data .same-media .list-group-item:last-child { border-bottom-width: 1px;}
+.guess-empty { border-bottom: 1px solid #ccc; margin: 0 10px; padding: 30px 0;}
 
-.question-search { margin: 0 20px;}
-.question-search .same-search { padding-bottom: 20px;}
+.guess-rank {}
+.guess-rank table {}
+.guess-rank th { color: #dd4416; background: #f7d9d0; border: none !important;}
+.guess-rank th+th { border-left: 1px solid #fff !important;}
+.guess-rank td { border: none !important;}
+.guess-rank th:first-child,
+.guess-rank td:first-child { text-indent: 20px;}
+.guess-rank tr.diff { background: #fcefeb !important;}
+
+.question-search { margin: 0 20px 20px;}
 
 .same-form {}
 .same-form label { font-weight: normal;}
@@ -233,6 +247,7 @@ small {color: inherit !important;}
 .same-title { padding: 15px 0; margin: 0 15px; border-bottom: 1px solid #e7e7e7;}
 .same-stall { padding: 8px 0;}
 .same-embed { border-top: 1px solid #e7e7e7; margin: 0 10px;}
+.same-tip { padding: 5px 20px;}
 
 .same-list { padding-left: 10px; padding-right: 10px; margin-bottom: 15px; background-color: #fff;}
 .same-list .list-group-item { border-width: 1px 0; border-radius: 0; color: #333; padding: 15px;}
@@ -240,6 +255,7 @@ small {color: inherit !important;}
 .same-list .list-group-item:last-child { border-bottom-width: 0;}
 .same-list .glyphicon-menu-right { margin-top: 3px; margin-left: 0px; color: #ccc;}
 .same-list .text { width: 50px;}
+.same-list .media-left img { width: 40px; height: 40px;}
 
 .same-list-side { font-size: 110%; padding: 5px 0; color: #fff;}
 .same-list-side .list-group-item { border: none; border-radius: 0; color: #fff; background: none; padding: 20px; padding-left: 40px;}

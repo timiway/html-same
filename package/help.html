@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>电影订单</title>
+    <title>我去2019</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -17,27 +17,24 @@
 </head>
 <body>
 
-<nav class="navbar navbar-fixed-top same-navbar same-slide">
+<nav class="navbar navbar-fixed-top same-navbar same-inverse same-slide">
     <div class="navbar-text pull-left">
         <div class="same-menu">
             <a href="####"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
             <span class="point bg-warning"></span>
         </div>
     </div>
-    <div class="same-search">
-        <div class="input-group input-group-sm">
-                <span class="input-group-addon block">
-                    <img src="img/013.png"/>
-                </span>
-            <input type="text" class="form-control block" placeholder="搜索电影创建你的电影订单"/>
-                <span class="input-group-btn">
-                    <a href="####" class="btn block">
-                        <img src="img/012.png"/>
-                    </a>
-                </span>
-        </div>
-    </div>
+    <p class="navbar-text pull-right">
+        <a href="####">
+            积分奖励
+        </a>
+    </p>
+    <p class="navbar-text title"><strong>今日求助</strong></p>
+    <div class="clearfix"></div>
+
 </nav>
+
+
 <div class="container same-sider">
     <div class="same-side-header">
         <div class="media">
@@ -51,7 +48,7 @@
         </div>
     </div>
     <div class="list-group same-list-side">
-        <a href="order.html" class="list-group-item active">
+        <a href="order.html" class="list-group-item">
             电影订单
         </a>
         <a href="####" class="list-group-item" data-submenu="#submenu-b">
@@ -103,7 +100,7 @@
             <a href="guess.html" class="list-group-item">
                 猜电影
             </a>
-            <a href="help.html" class="list-group-item">
+            <a href="help.html" class="list-group-item active">
                 求助区
             </a>
             <a href="ranking.html" class="list-group-item">
@@ -116,118 +113,151 @@
     </div>
 </div>
 
-<div class="container same-main nav-space same-slide">
+<div class="container same-stage stage-guess bg-white same-slide">
 
-    <ul class="list-group same-media">
+
+    <div class="guess-bar same-slide navbar-fixed-top">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="left center-block">
+                    <p>
+                        <span>MAR</span>
+                        &nbsp;
+                        <strong>tues</strong>
+                    </p>
+                    <p>初十</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class=" center text-center">
+                    23
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="right center-block">281</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="space-guess"></div>
+    <div class="same-tip bg-warning text-warning text-center">
+        <span class="glyphicon glyphicon-info-sign"></span>
+        帮助他们你将得到积分奖励，选择一个你要帮助的求助人吧
+    </div>
+    <ul class="list-group same-list">
         <li class="list-group-item">
             <div class="media">
                 <div class="media-left">
-                    <a href="####">
-                        <img class="media-object" src="img/006.png" alt="...">
-                    </a>
+                    <a href="guess-c.html"><img src="img/001.png" class="img-rounded"/></a>
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><a href="####">太阳照常升起</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        0人想看
-                    </p>
-                </div>
-                <div class="media-right">
-                    <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
+                    <h5 class="media-heading"><strong>K.</strong></h5>
+                    <div>
+                        <span class="text-muted">帮过他 2 次</span>
                     </div>
-                    <a class="btn btn-info" href="####" role="button">创建订单</a>
                 </div>
             </div>
         </li>
         <li class="list-group-item">
             <div class="media">
                 <div class="media-left">
-                    <a href="####">
-                        <img class="media-object" src="img/006.png" alt="...">
-                    </a>
+                    <a href="####"><img src="img/021.png" class="img-rounded"/></a>
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><a href="####">太阳照常升起</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        0人想看
-                    </p>
-                </div>
-                <div class="media-right">
-                    <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
+                    <h5 class="media-heading"><strong>DanDingDanDing</strong></h5>
+                    <div>
+                        <span class="text-warning">帮过你 1 次</span>
+                        &nbsp;&nbsp;&nbsp;
+                        <span class="text-muted">帮过他 2 次</span>
                     </div>
-                    <a class="btn btn-info" href="####" role="button">创建订单</a>
                 </div>
             </div>
         </li>
         <li class="list-group-item">
             <div class="media">
                 <div class="media-left">
-                    <a href="####">
-                        <img class="media-object" src="img/006.png" alt="...">
-                    </a>
+                    <a href="####"><img src="img/022.png" class="img-rounded"/></a>
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><a href="####">太阳照常升起</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        0人想看
-                    </p>
-                </div>
-                <div class="media-right">
-                    <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
-                    </div>
-                    <a class="btn btn-info" href="####" role="button">创建订单</a>
+                    <h5 class="media-heading"><strong>森</strong></h5>
                 </div>
             </div>
         </li>
         <li class="list-group-item">
             <div class="media">
                 <div class="media-left">
-                    <a href="####">
-                        <img class="media-object" src="img/006.png" alt="...">
-                    </a>
+                    <a href="####"><img src="img/015.png" class="img-rounded"/></a>
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><a href="####">太阳照常升起</a></h5>
-                    <p class="text-muted text-multiline">
-                        1993年&nbsp;&nbsp;&nbsp;
-                        香港&nbsp;&nbsp;&nbsp;
-                        99分钟
-                    </p>
-                    <p>
-                        0人想看
-                    </p>
-                </div>
-                <div class="media-right">
-                    <div class="score pull-right text-center">
-                        <div class="score-number text-primary">8.3</div>
-                        <div class="text-muted"><small>豆瓣</small></div>
+                    <h5 class="media-heading"><strong>黑道</strong></h5>
+                    <div>
+                        <span class="text-warning">帮过你 1 次</span>
                     </div>
-                    <a class="btn btn-info" href="####" role="button">创建订单</a>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="media">
+                <div class="media-left">
+                    <a href="####"><img src="img/017.png" class="img-rounded"/></a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading"><strong>Mr.张先森</strong></h5>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="media">
+                <div class="media-left">
+                    <a href="####"><img src="img/016.png" class="img-rounded"/></a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading"><strong>Iguazu</strong></h5>
+                    <div>
+                        <span class="text-muted">帮过他 2 次</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="media">
+                <div class="media-left">
+                    <a href="####"><img src="img/018.png" class="img-rounded"/></a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading"><strong>星星</strong></h5>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="media">
+                <div class="media-left">
+                    <a href="####"><img src="img/019.png" class="img-rounded"/></a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading"><strong>柚</strong></h5>
+                    <div>
+                        <span class="text-muted">帮过他 2 次</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="media">
+                <div class="media-left">
+                    <a href="####"><img src="img/024.png" class="img-rounded"/></a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading"><strong>巫丹</strong></h5>
                 </div>
             </div>
         </li>
     </ul>
+
+
+
 
 </div>
 
@@ -240,5 +270,12 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app-same.js"></script>
+<script>
+    //
+    $(function () {
+        //
+    });
+    //
+</script>
 </body>
 </html>

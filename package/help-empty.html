@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>转票</title>
+    <title>我去2019</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -17,16 +17,24 @@
 </head>
 <body>
 
-<nav class="navbar navbar-fixed-top same-navbar same-slide">
+<nav class="navbar navbar-fixed-top same-navbar same-inverse same-slide">
     <div class="navbar-text pull-left">
         <div class="same-menu">
             <a href="####"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
             <span class="point bg-warning"></span>
         </div>
     </div>
-    <p class="navbar-text title"><strong>求转票详情</strong></p>
+    <p class="navbar-text pull-right">
+        <a href="####">
+            积分奖励
+        </a>
+    </p>
+    <p class="navbar-text title"><strong>今日求助</strong></p>
     <div class="clearfix"></div>
+
 </nav>
+
+
 <div class="container same-sider">
     <div class="same-side-header">
         <div class="media">
@@ -92,7 +100,7 @@
             <a href="guess.html" class="list-group-item">
                 猜电影
             </a>
-            <a href="help.html" class="list-group-item">
+            <a href="help.html" class="list-group-item active">
                 求助区
             </a>
             <a href="ranking.html" class="list-group-item">
@@ -105,59 +113,47 @@
     </div>
 </div>
 
-<div class="container same-main nav-space bar-space same-slide">
+<div class="container same-stage stage-guess bg-white same-slide">
 
-    <ul class="list-group same-media">
-        <li class="list-group-item">
-            <div class="media">
-                <div class="media-left">
-                    <a href="####">
-                        <img class="media-object" src="img/002.png" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h5 class="media-heading"><a href="####">青蛇</a></h5>
-                    <div class="text-line3">
-                        <p class="text-muted">
-                            1993年&nbsp;&nbsp;&nbsp;
-                            香港&nbsp;&nbsp;&nbsp;
-                            99分钟
-                        </p>
-                        <p class="text-primary">
-                            <span class="h3">5</span>
-                            人在求票
-                        </p>
-                    </div>
+
+    <div class="guess-bar same-slide navbar-fixed-top">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="left center-block">
+                    <p>
+                        <span>MAR</span>
+                        &nbsp;
+                        <strong>tues</strong>
+                    </p>
+                    <p>初十</p>
                 </div>
             </div>
-        </li>
-    </ul>
-
-
-    <div class="panel same-ticket">
-        <div class="panel-body text-center">
-            <div class="avatar">
-                <a href="####"><img class="img-circle" width="80" src="img/001.png" alt="..."></a>
+            <div class="col-xs-4">
+                <div class=" center text-center">
+                    23
+                </div>
             </div>
-            <h4 style="padding: 10px 0;">
-                <span class="text-default">微信名：</span>alandzk
-            </h4>
-            <p class="text-white">
-                <a class="btn btn-primary btn-lg" href="####" role="button">
-                    复制微信名
-                </a>
-            </p>
+            <div class="col-xs-4">
+                <div class="right center-block">281</div>
+            </div>
         </div>
     </div>
 
-    <div class="same-users">
-        <button type="button" class="btn btn-block btn-go" onclick="location.href='rules.html'">
-            &gt;查看SAME转票规则&lt;
-        </button>
+
+
+    <div class="space-guess"></div>
+    <div class="same-tip bg-warning text-warning text-center">
+        <span class="glyphicon glyphicon-info-sign"></span>
+        帮助他们你将得到积分奖励，选择一个你要帮助的求助人吧
     </div>
+    <div class="guess-empty text-muted text-center">
+        暂时还没有人求助，过一会儿再来看看吧。
+    </div>
+
+
+
+
 </div>
-
-
 
 
 
@@ -169,6 +165,10 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app-same.js"></script>
 <script>
+    //
+    $(function () {
+        //
+    });
     //
 </script>
 </body>

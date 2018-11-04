@@ -24,12 +24,12 @@
             <span class="point bg-warning"></span>
         </div>
     </div>
-    <p class="navbar-text pull-right">
-        <a href="help-empty.html">
-            求助区
-        </a>
+    <p class="navbar-text text-center">
+        <strong>
+            <span class="tab">今日排行</span>
+            <span class="tab">当月排行</span>
+        </strong>
     </p>
-    <p class="navbar-text title"><strong>猜电影</strong></p>
     <div class="clearfix"></div>
 
 </nav>
@@ -97,13 +97,13 @@
             </a>
         </ul>
         <ul class="list-group" id="submenu-b">
-            <a href="guess.html" class="list-group-item active">
+            <a href="guess.html" class="list-group-item">
                 猜电影
             </a>
             <a href="help.html" class="list-group-item">
                 求助区
             </a>
-            <a href="ranking.html" class="list-group-item">
+            <a href="ranking.html" class="list-group-item active">
                 排行榜
             </a>
             <a href="question.html" class="list-group-item">
@@ -116,7 +116,7 @@
 <div class="container same-stage stage-guess bg-white same-slide">
 
 
-    <div class="guess-bar guess-shadow same-slide navbar-fixed-top">
+    <div class="guess-bar same-slide navbar-fixed-top">
         <div class="row">
             <div class="col-xs-4">
                 <div class="left center-block">
@@ -141,104 +141,127 @@
 
 
 
-
-    <div class="center-block">
-        <img class="img-responsive center-block" src="img/039.jpg" />
+    <div class="space-guess"></div>
+    <div class="guess-rank">
+        <table class="table table-striped">
+            <col width="50%" />
+            <col width="25%" />
+            <col width="25%" />
+            <tr>
+                <th>昵称</th>
+                <th>增加积分</th>
+                <th>总积分</th>
+            </tr>
+            <tr class="">
+                <td>K.</td>
+                <td class="text-warning">+30</td>
+                <td class="text-warning">130</td>
+            </tr>
+            <tr class="diff">
+                <td>DanDingDanDing</td>
+                <td class="text-warning">+28</td>
+                <td class="text-warning">129</td>
+            </tr>
+            <tr class="">
+                <td>森</td>
+                <td class="text-warning">+26</td>
+                <td class="text-warning">128</td>
+            </tr>
+            <tr class="diff">
+                <td>黑道</td>
+                <td class="text-warning">+24</td>
+                <td class="text-warning">127</td>
+            </tr>
+            <tr>
+                <td>Mr.张先森</td>
+                <td class="text-warning">+22</td>
+                <td class="text-warning">126</td>
+            </tr>
+            <tr class="diff">
+                <td>Iguazu</td>
+                <td class="text-warning">+20</td>
+                <td class="text-warning">125</td>
+            </tr>
+            <tr class="">
+                <td>星星</td>
+                <td class="text-warning">+18</td>
+                <td class="text-warning">124</td>
+            </tr>
+            <tr class="diff">
+                <td>柚</td>
+                <td class="text-warning">+16</td>
+                <td class="text-warning">123</td>
+            </tr>
+            <tr class="">
+                <td>巫丹</td>
+                <td class="text-warning">+14</td>
+                <td class="text-warning">122</td>
+            </tr>
+            <tr class="diff">
+                <td>小尘埃</td>
+                <td class="text-warning">+12</td>
+                <td class="text-warning">121</td>
+            </tr>
+            <tr class="">
+                <td>Shaka</td>
+                <td class="">+10</td>
+                <td class="">120</td>
+            </tr>
+            <tr class="">
+                <td>邹沫</td>
+                <td class="">+10</td>
+                <td class="">119</td>
+            </tr>
+            <tr class="">
+                <td>(橙子)</td>
+                <td class="">+10</td>
+                <td class="">118</td>
+            </tr>
+            <tr class="">
+                <td>Cloudsong</td>
+                <td class="">+10</td>
+                <td class="">117</td>
+            </tr>
+            <tr class="">
+                <td>K.</td>
+                <td class="">+10</td>
+                <td class="">116</td>
+            </tr>
+            <tr class="">
+                <td>DanDingDanDing</td>
+                <td class="">+10</td>
+                <td class="">115</td>
+            </tr>
+            <tr class="">
+                <td>森</td>
+                <td class="">+10</td>
+                <td class="">114</td>
+            </tr>
+            <tr class="">
+                <td>黑道</td>
+                <td class="">+10</td>
+                <td class="">113</td>
+            </tr>
+            <tr class="">
+                <td>Mr.张先森</td>
+                <td class="">+10</td>
+                <td class="">112</td>
+            </tr>
+            <tr class="">
+                <td>Iguazu</td>
+                <td class="">+10</td>
+                <td class="">111</td>
+            </tr>
+        </table>
+    </div>
+    <div class="same-users">
+        <button type="button" class="btn btn-warning btn-block" onclick="">
+            <span class="text-warning">点击查看积分规则</span>
+        </button>
     </div>
 
-    <div class="guess-result">
-        <p class="text-warning">
-            今日出题人 / <label>沙丹</label>
-        </p>
-        <h2>闻香识女人</h2>
-        <h4>Scent of a Woman</h4>
-        <p class="text-warning">首映日 1992-12-23</p>
-        <p>导演：马丁·布莱斯特</p>
-        <p>编剧：博·古德曼 / 乔瓦尼·阿尔皮诺</p>
-        <p>主演：阿尔·帕西诺 / 克里斯·奥唐纳 / 詹姆斯·瑞布霍恩 / 加布里埃尔·安瓦尔 / 菲利普·塞默·霍夫曼</p>
-        <p>制片国家/地区：美国</p>
-        <p>语言：英语</p>
-        <p>片长：157 分钟</p>
-    </div>
-    <div class="row text-center guess-integral">
-        <div class="col-xs-4">
-            <label>8.5</label>
-            <p>豆瓣</p>
-        </div>
-        <div class="col-xs-4">
-            <label>8.1</label>
-            <p>IMDb</p>
-        </div>
-        <div class="col-xs-4">
-            <label>89%</label>
-            <p class="small">Rotten<br />Tomatoes</p>
-        </div>
-    </div>
-    <div class="guess-btns guess-body center-block">
-        <div class="form-group">
-            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="">
-                <span>我想看</span>
-            </button>
-        </div>
-        <div class="form-group">
-            <button type="button" class="btn btn-warning btn-lg btn-block" onclick="location.href='help.html'">
-                <span class="text-warning">23人求助此题，去救救他们</span>
-            </button>
-        </div>
-        <div class="form-group">
-            <button type="button" class="btn btn-warning btn-lg btn-block" onclick="location.href='question.html'">
-                <span class="text-warning">我也要出题</span>
-            </button>
-        </div>
-    </div>
-    <div class="space-calender-bottom"></div>
 
 
-
-
-
-    <div class="navbar-fixed-bottom same-slide">
-        <div class="same-calendar same-bottom">
-            <a href="####" class="btn pull-left">
-                <span class="glyphicon glyphicon-menu-left"></span>
-            </a>
-            <a href="####" class="btn pull-right">
-                <span class="glyphicon glyphicon-menu-right"></span>
-            </a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <p class="text-muted">日</p>
-                        <p class="">21</p>
-                    </div>
-                    <div class="col-xs-2">
-                        <p class="text-muted">一</p>
-                        <p class="">22</p>
-                    </div>
-                    <div class="col-xs-2 bg-info">
-                        <p class="">二</p>
-                        <p class="">今天</p>
-                    </div>
-                    <div class="col-xs-2">
-                        <p class="text-muted">三</p>
-                        <p class="text-muted">24</p>
-                    </div>
-                    <div class="col-xs-2">
-                        <p class="text-muted">四</p>
-                        <p class="text-muted">25</p>
-                    </div>
-                    <div class="col-xs-2">
-                        <p class="text-muted">五</p>
-                        <p class="text-muted">26</p>
-                    </div>
-                    <div class="col-xs-2">
-                        <p class="text-muted">六</p>
-                        <p class="text-muted">27</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 </div>
@@ -256,6 +279,13 @@
     //
     $(function () {
         //
+        $(".same-navbar .tab").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            //
+            // todo...update table's data...
+            // ...
+            //
+        }).first().click();
     });
     //
 </script>
