@@ -19,6 +19,7 @@ small {color: inherit !important;}
 .text-primary { color: #39f;}
 .text-muted { color: #999;}
 .text-warning { color: #fc6;}
+.text-error { color: darkred;}
 .text-info { color: #a6d2ff;}
 .text-multiline { display: table-cell; vertical-align: middle;}
 
@@ -156,6 +157,7 @@ small {color: inherit !important;}
 .same-stage { position: absolute; width: 100%; top: 0; bottom: 0; overflow-y: auto;}
 .stage-bg { background: url("../img/027.png") no-repeat 0 0; background-size: 100% 100%;}
 .stage-seat { height: 90px; background: url("../img/028.png") repeat-x 50% 0; background-size: 390px;}
+.stage-seat .shadow { height: 100px; width: 100%; position: absolute; z-index: -1; top: -85px; background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));}
 
 .stage-note { padding-top: 55px; padding-bottom: 120px;}
 .stage-note .slogan { width: 230px; padding: 20px 0;}
@@ -234,6 +236,20 @@ small {color: inherit !important;}
 .guess-rank tr.diff { background: #fcefeb !important;}
 
 .question-search { margin: 0 20px 20px;}
+
+.stage-statement { background: white no-repeat 50% 100%; padding-top: 55px; padding-bottom: 100px;}
+.stage-statement.bg { background-image: url("../img/042.jpg"); background-size: 100%;}
+.stage-statement .slogan { width: 140px; padding: 30px 0;}
+.stage-statement .items { width: 320px; padding: 20px 0;}
+.stage-statement .actions { min-width: 320px; width: 80%; padding-bottom: 20px;}
+.stage-statement .actions button { border-radius: 16px; height: 32px;}
+.stage-statement .actions label { margin: 0; font-size: 120%;}
+.stage-statement .actions .glyphicon { font-size: 140%; margin-left: -5px;}
+.stage-statement .text { width: 260px; font-size: 85%; margin-bottom: 20px;}
+
+.statement-item { color: #ce938f; font-size: 85%; margin: 0 10px; padding-bottom: 20px;}
+.statement-item .badge { border-radius: 50%; padding: 10px; background: #edd7d5; margin-bottom: 10px;}
+.statement-item img { width: 40px;}
 
 .same-form {}
 .same-form label { font-weight: normal;}
@@ -404,5 +420,9 @@ small {color: inherit !important;}
 .same-error { background: #fc6; padding: 50px 0;}
 .same-error p { color: #fff;}
 .same-error .img { margin: auto; width: 50%; max-width: 390px;}
+
+.same-theme-a .btn-primary { background-color: #9e281f !important;}
+.same-theme-a .same-navbar { background-color: #9e281f;}
+.same-theme-a .stage-seat { background-image: url("../img/028a.png");}
 
 

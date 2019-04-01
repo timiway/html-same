@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>分享日历</title>
+    <title>文明观影</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-same.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="same-theme-a">
 
 <nav class="navbar navbar-fixed-top same-navbar same-slide">
     <div class="navbar-text pull-left">
@@ -24,34 +24,8 @@
             <span class="point bg-warning"></span>
         </div>
     </div>
-    <div class="pull-right filter">
-        <button type="button" class="btn btn-lg collapsed" data-toggle="collapse" data-target="#filter">
-            筛选
-        </button>
-    </div>
-    <p class="navbar-text title"><strong>2017年5月/6月</strong></p>
-    <div class="clearfix"></div>
-
-    <div id="filter" class="navbar-collapse collapse">
-        <div class="navbar-filter">
-            <a href="####" class="btn">全部</a>
-            <a href="####" class="btn">
-                <img src="img/033.png" />
-                只看小西天
-            </a>
-            <a href="####" class="btn">
-                <span class="glyphicon glyphicon-heart"></span>
-                只看关注的
-            </a>
-            <a href="####" class="btn">
-                <span class="glyphicon glyphicon-time"></span>
-                只看提醒的
-            </a>
-        </div>
-    </div>
-
+    <p class="navbar-text title"><strong>文明观影</strong></p>
 </nav>
-
 
 <div class="container same-sider">
     <div class="same-side-header">
@@ -72,7 +46,7 @@
         <a href="####" class="list-group-item" data-submenu="#submenu-b">
             我去2019
         </a>
-        <a href="calendar.html" class="list-group-item active">
+        <a href="calendar.html" class="list-group-item">
             分享日历
             <span class="point bg-warning"></span>
         </a>
@@ -91,7 +65,7 @@
             我　　的
             <span class="point bg-warning"></span>
         </a>
-        <a href="statement.html" class="list-group-item">
+        <a href="statement.html" class="list-group-item active">
             文明观影
             <span class="point"></span>
         </a>
@@ -135,66 +109,29 @@
     </div>
 </div>
 
-<div class="container same-main nav-space same-slide">
+<div class="container same-stage stage-statement bg same-slide">
 
-    <div class="same-calendar same-slide">
-        <a href="####" class="btn pull-left">
-            <span class="glyphicon glyphicon-menu-left"></span>
-        </a>
-        <a href="####" class="btn pull-right">
-            <span class="glyphicon glyphicon-menu-right"></span>
-        </a>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-2">
-                    <p class="text-muted">日</p>
-                    <p class="text-warning">28</p>
-                </div>
-                <div class="col-xs-2 bg-info">
-                    <p class="text-muted">一</p>
-                    <p class="text-primary">今天</p>
-                </div>
-                <div class="col-xs-2">
-                    <p class="text-muted">二</p>
-                    <p class="">30</p>
-                </div>
-                <div class="col-xs-2">
-                    <p class="text-muted">三</p>
-                    <p class="">31</p>
-                </div>
-                <div class="col-xs-2">
-                    <p class="text-muted">四</p>
-                    <p class="">01</p>
-                </div>
-                <div class="col-xs-2">
-                    <p class="text-muted">五</p>
-                    <p class="">02</p>
-                </div>
-                <div class="col-xs-2">
-                    <p class="text-muted">六</p>
-                    <p class="text-warning">03</p>
-                </div>
-            </div>
-        </div>
+    <div class="center-block slogan">
+        <img class="img-responsive" src="img/040.png"/>
     </div>
 
-    <div class="same-empty" style="padding-top: 10px;">
-        <div class="text-center">
-            <div class="text text-muted">本周暂无分享活动</div>
-            <div class="thumbnail center-block">
-                <img src="img/034.png"/>
-            </div>
-            <div class="text text-muted">
-                <p>快去把你知道的电影活动分享给大家吧，<br />分享精彩活动得积分可以换SAME的电影票的！</p>
-            </div>
-        </div>
-        <a href="####" class="btn btn-block btn-go">
-            <img src="img/032.png" class="pull-left" />
-            &gt;分享电影活动得积分换影票&lt;
-        </a>
+    <div class="center-block text">
+        <p>感谢你的参与与承诺，很高兴能在偌大的北京城里与你相遇，希望你能准时赶上每一场放映，能享受每一部电影，也能创造一个良好的公共空间，让每个人都享受在其中。</p>
+        <p class="text-error">请向工作人员出示一下二维码领取文明观影票夹，谢谢。</p>
+    </div>
+
+    <div class="same-code center-block">
+        <img src="img/025.png"/>
     </div>
 
 </div>
+
+<div class="navbar-fixed-bottom same-slide">
+    <div class="stage-seat"></div>
+</div>
+
+
+
 
 
 
@@ -204,8 +141,5 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app-same.js"></script>
-<script>
-    //
-</script>
 </body>
 </html>
